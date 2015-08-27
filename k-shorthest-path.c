@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 
-void dijkstra(int size, int **matriz, int no1, int no2, int custos, int caminho);
+void dijkstra(int size, int **matriz, int no1, int no2, int *custos, int *caminho);
 
 int main(int argc, const char *argv[]){
 
@@ -11,6 +11,6 @@ int main(int argc, const char *argv[]){
 }
 
 
-void dijkstra(int size, int **matriz, int no1, int no2, int custos, int caminho){
+void dijkstra(int size, int **matriz, int no1, int no2, int *custos, int *caminho){
 
 }
