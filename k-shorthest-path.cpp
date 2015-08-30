@@ -11,10 +11,11 @@ using namespace std;
 void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho);
 int leTopologia(FILE *p, int **matriz);
 int menorCusto(vector<int>& custos);
-void atualizaMatriz(int menorCusto, int **matriz, vector<int>&);
+void atualizaMatriz(int menorCusto, int **matriz, vector<int> &caminho);
 
 
 int main(int argc, const char *argv[]){
+
 
 	return 0;
 }
@@ -30,7 +31,7 @@ int leTopologia(FILE *p, int **matriz){
     int no1, no2, k;
     //no1 = atoi(argv[1]);
     //no2 = atoi(argv[2]);
-    k = atoi(argv[3]);
+    //k = atoi(argv[3]);
 
 
     //Paths *arrayA, *arrayB = NULL;
@@ -133,7 +134,14 @@ int menorCusto(vector<int>& custos){
 
 }
 
-void atualizaMatriz(int menorCusto, int **matriz, vector<int>&){
+void atualizaMatriz(int menorCusto, int **matriz, vector<int> &caminho){
 
+	int i, j;
+
+	i = caminho.at(menorCusto);
+	j = caminho.at(menorCusto+1);
+
+	matriz[i][j] = 0;
+	matriz[j][i] = 0;	
 
 }
