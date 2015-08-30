@@ -3,8 +3,13 @@
 #include<string.h>
 #include <vector>
 #include <iostream>
+<<<<<<< HEAD
+#include <algorithm>
+#include <iterator>
+=======
 #include <stddef.h>
 #include <algorithm>
+>>>>>>> 6e13049967e73f8e116ecc4b3057aac55c507ed6
 
 using namespace std;
 
@@ -162,11 +167,13 @@ void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vec
 }
 
 int menorCusto(vector<int>& custos){
-
-
+	int menor = *min_element(custos.begin(), custos.end());
+	int indice  = distance(custos.begin(), find(custos.begin(), custos.end(), menor));
+	return indice;
 }
 
 void atualizaMatriz(int menorCusto, int **matriz, vector<int>&){
 
 
 }
+
