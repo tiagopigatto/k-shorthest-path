@@ -9,43 +9,39 @@
 using namespace std;
 
 void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho);
-int leTopologia(FILE *p, int **matriz);
+int leTopologia(vector<vector<int> >& matrix );
 int menorCusto(vector<int>& custos);
 void atualizaMatriz(int menorCusto, int **matriz, vector<int>&);
 
 
 int main(int argc, const char *argv[]){
+    
+    int linhas;
+    vector<vector<int> > matrix;
+
+    linhas = leTopologia(matrix);
+
+    for(int i =0; i<linhas; i++){
+        for(int j=0; j<linhas; j++){
+            printf("%d\t", matrix[i][j]);
+
+        }
+        printf("\n");
+    }
+
 
 	return 0;
 }
 
-int leTopologia(FILE *p, int **matriz){
-
-	/*if(argc != 4){
-        printf("Espera-se 3 argumentos: No1, No2 e K.");
-        exit(1);
-    }*/
-  
-  
-    int no1, no2, k;
-    //no1 = atoi(argv[1]);
-    //no2 = atoi(argv[2]);
-    k = atoi(argv[3]);
-
-
-    //Paths *arrayA, *arrayB = NULL;
+int leTopologia(vector<vector<int> >& matrix){
 
     FILE *fp;
     char ch, *line, *node1, *node2, *weight;
     int numberOfLines = 0;
     size_t len = 0;
-    size_t arrayA_space = 1;
-    size_t arrayB_space = 1;
-    int arrayA_it = 0;
-    int arrayB_it = 0;
-    int **matrix, i_node1, i_node2, i_weight, *custos, *caminho, **matrixCopy;
+    int node1_int, node2_int, weight_int;
 
-    fp = fopen("entrada.txt", "r");
+    fp = fopen("6.txt", "r");
 
     //Numero de linhas do arquivo, ou seja numero de nos
     while(!feof(fp)){
@@ -55,7 +51,44 @@ int leTopologia(FILE *p, int **matriz){
         }
     }
 
-	cout << numberOfLines << endl;
+    matrix.resize(numberOfLines);
+    for(int i=0; i< numberOfLines; i++){
+        matrix[i].resize(numberOfLines);
+    }
+
+    
+
+    fseek(fp, 0, SEEK_SET);
+
+    //Loop para ler todas as linhas do arquivo
+    for(int i = 0; i<numberOfLines; i++){
+        //Le a linha
+        getline(&line, &len, fp);
+        
+        //Lê o primeiro no
+        node1 = strtok(line, " []-;");
+        node1_int = atoi(node1);
+        
+        //Loop para ler todos os nos e os pesos
+        do{
+            //Lê o segundo no
+            node2 = strtok(NULL, " []-;\n");
+            if (node2 == NULL) break;
+            node2_int = atoi(node2);
+            
+            //Lê o peso
+            weight = strtok(NULL, " []-;\n");
+            if (weight == NULL) break;
+            weight_int = atoi(weight);
+            
+            //Atribui a matriz o peso certo
+            matrix[node1_int - 1][node2_int - 1] = weight_int;
+            
+        }while (node2 != NULL || weight != NULL);
+    }
+
+    return numberOfLines;
+
 }
 
 
