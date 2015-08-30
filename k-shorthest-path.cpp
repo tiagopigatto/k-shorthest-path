@@ -3,13 +3,11 @@
 #include<string.h>
 #include <vector>
 #include <iostream>
-<<<<<<< HEAD
 #include <algorithm>
 #include <iterator>
-=======
 #include <stddef.h>
 #include <algorithm>
->>>>>>> 6e13049967e73f8e116ecc4b3057aac55c507ed6
+
 
 using namespace std;
 
