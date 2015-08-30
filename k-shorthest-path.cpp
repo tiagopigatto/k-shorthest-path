@@ -14,25 +14,11 @@ using namespace std;
 void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho);
 int leTopologia(vector<vector<int> >& matrix );
 int menorCusto(vector<int>& custos);
-void atualizaMatriz(int menorCusto, int **matriz, vector<int>&);
+void atualizaMatriz(int menorCusto, int **matriz, vector<int> &caminho);
 
 
 int main(int argc, const char *argv[]){
     
-    int linhas;
-    vector<vector<int> > matrix;
-
-    linhas = leTopologia(matrix);
-
-    for(int i =0; i<linhas; i++){
-        for(int j=0; j<linhas; j++){
-            printf("%d\t", matrix[i][j]);
-
-        }
-        printf("\n");
-    }
-
-
 	return 0;
 }
 
@@ -170,8 +156,15 @@ int menorCusto(vector<int>& custos){
 	return indice;
 }
 
-void atualizaMatriz(int menorCusto, int **matriz, vector<int>&){
+void atualizaMatriz(int menorCusto, int **matriz, vector<int> &caminho){
 
+	int i, j;
+
+	i = caminho.at(menorCusto);
+	j = caminho.at(menorCusto+1);
+
+	matriz[i][j] = 0;
+	matriz[j][i] = 0;	
 
 }
 
