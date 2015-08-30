@@ -11,27 +11,70 @@
 
 using namespace std;
 
-void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho);
+int custoTotal(vector<int> custos);
+void dijkstra(int size, vector<vector<int> >& matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho);
 int leTopologia(vector<vector<int> >& matrix );
 int menorCusto(vector<int>& custos);
-void atualizaMatriz(int menorCusto, int **matriz, vector<int> &caminho);
+void atualizaMatriz(int menorCusto, vector<vector<int> >& matriz, vector<int> &caminho);
 
 
 int main(int argc, const char *argv[]){
     
-	return 0;
+    int numberOfLines, no1 = 0, no2 = 4, indiceMenorCusto, custo = 0;
+    int k = 2;
+    vector<vector<int> > matriz;
+    vector<int> custos;
+    vector<int> caminho;
+    
+    numberOfLines = leTopologia(matriz);
+    
+    for(int i=0; i< k; i++){
+        dijkstra(numberOfLines, matriz, no1, no2, custos, caminho);
+        
+        if(caminho.size() > 0){
+            for(int k = 0; k < caminho.size(); k++){
+                if(k != caminho.size() - 1){
+                    printf("%d-->", caminho[k]);
+                }else{
+                    printf("%d\n", caminho[k]);
+                }
+            }
+        }
+        
+        if (custos.size() > 0){
+            for(int k = 0; k < custos.size(); k++){
+                printf(" %d", custos[k]);
+            }
+            printf("\n");
+        }
+        
+        custo = custoTotal(custos);
+        printf("Custo Total: %d\n", custo);
+        
+        
+        indiceMenorCusto = menorCusto(custos);
+        printf("%d", indiceMenorCusto);
+        
+        atualizaMatriz(indiceMenorCusto, matriz, caminho);
+        
+        
+        
+    }
+    
+    
+    return 0;
 }
 
 int leTopologia(vector<vector<int> >& matrix){
-
+    
     FILE *fp;
     char ch, *line, *node1, *node2, *weight;
     int numberOfLines = 0;
     size_t len = 0;
     int node1_int, node2_int, weight_int;
-
+    
     fp = fopen("6.txt", "r");
-
+    
     //Numero de linhas do arquivo, ou seja numero de nos
     while(!feof(fp)){
         ch = fgetc(fp);
@@ -39,16 +82,16 @@ int leTopologia(vector<vector<int> >& matrix){
             numberOfLines++;
         }
     }
-
+    
     matrix.resize(numberOfLines);
     for(int i=0; i< numberOfLines; i++){
         matrix[i].resize(numberOfLines);
     }
-
     
-
+    
+    
     fseek(fp, 0, SEEK_SET);
-
+    
     //Loop para ler todas as linhas do arquivo
     for(int i = 0; i<numberOfLines; i++){
         //Le a linha
@@ -75,19 +118,21 @@ int leTopologia(vector<vector<int> >& matrix){
             
         }while (node2 != NULL || weight != NULL);
     }
-
+    
+    fclose(fp);
+    
     return numberOfLines;
-
+    
 }
 
 
-void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho){
+void dijkstra(int size, vector<vector<int> >& matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho){
     
     int distancia[size];
     int i, num,aux;
     int minimum, min_index = 0;
     int pai[size];
-	 vector<int> vetor_aux;
+    vector<int> vetor_aux;
     int visited[size]; // visited[i] = 0 se nó i não foi visitado, visited[i] = 1 caso contrário
     
     //Seta todas as distancias da origem com um valor grande
@@ -104,7 +149,7 @@ void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vec
         
         minimum = 32760;
         
-		  //Proximo no de menor caminho para se visitar
+        //Proximo no de menor caminho para se visitar
         for(i = 0; i < size; i++){
             if(distancia[i] <= minimum && !visited[i]){
                 minimum = distancia[i];
@@ -114,7 +159,7 @@ void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vec
         
         visited[min_index] = 1;
         
-		  //Atualiza distancia dos nós ate o nó escolhido para se visitar
+        //Atualiza distancia dos nós ate o nó escolhido para se visitar
         for(i = 0; i < size; i++){
             if(!visited[i] && matriz[min_index][i] && distancia[min_index] != 32760 && distancia[min_index]+matriz[min_index][i] < distancia[i]){
                 distancia[i] = distancia[min_index] + matriz[min_index][i];
@@ -134,37 +179,46 @@ void dijkstra(int size, int **matriz, int no1, int no2, vector<int>& custos, vec
     
     //Preenche vetor auxiliar com menor caminho
     caminho.push_back(no2);
-    aux=1;
     for(i=1;i<size;i++){
-		  caminho.push_back(pai[caminho.at(i-1)]); //vetor_aux[i] = pai[vetor_aux[i-1]];
-        aux++;
+        caminho.push_back(pai[caminho.at(i-1)]); //vetor_aux[i] = pai[vetor_aux[i-1]];
         if(pai[caminho.at(i-1)] == no1) break;
     }
     //for(i=0; i < aux; i++)
     //    caminho[i] = vetor_aux[aux-1-i];
-	 reverse(caminho.begin(), caminho.end());
+    reverse(caminho.begin(), caminho.end());
     
     //Preenche vetor com custos do menor caminho
-    for(i=0; i < aux-1; i++)
-        custos[i] = matriz[caminho[i]][caminho[i+1]];
-
+    for(i=0; i < caminho.size() - 1; i++)
+        custos.push_back( matriz[caminho[i]][caminho[i+1]]);
+    
 }
 
 int menorCusto(vector<int>& custos){
-	int menor = *min_element(custos.begin(), custos.end());
-	int indice  = distance(custos.begin(), find(custos.begin(), custos.end(), menor));
-	return indice;
+    int menor = *min_element(custos.begin(), custos.end());
+    int indice  = distance(custos.begin(), find(custos.begin(), custos.end(), menor));
+    printf("%d\n", indice);
+    return indice;
 }
 
-void atualizaMatriz(int menorCusto, int **matriz, vector<int> &caminho){
+void atualizaMatriz(int menorCusto, vector<vector<int> >& matriz, vector<int> &caminho){
+    
+    int i, j;
+    
+    i = caminho.at(menorCusto);
+    j = caminho.at(menorCusto+1);
+    
+    matriz[i][j] = 0;
+    matriz[j][i] = 0;
+    
+}
 
-	int i, j;
-
-	i = caminho.at(menorCusto);
-	j = caminho.at(menorCusto+1);
-
-	matriz[i][j] = 0;
-	matriz[j][i] = 0;	
-
+int custoTotal(vector<int> custos){
+    int custo = 0;
+    
+    for (int i =0; i< custos.size(); i++){
+        custo += custos[i];
+    }
+    
+    return custo;
 }
 
