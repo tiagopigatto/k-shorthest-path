@@ -13,30 +13,54 @@ using namespace std;
 
 int custoTotal(vector<int> custos);
 void dijkstra(int size, vector<vector<int> >& matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho);
-int leTopologia(vector<vector<int> >& matrix );
-int menorCusto(vector<int>& custos);
+int leTopologia(vector<vector<int> >& matrix);
+long menorCusto(vector<int>& custos);
 void atualizaMatriz(int menorCusto, vector<vector<int> >& matriz, vector<int> &caminho);
 
 
 int main(int argc, const char *argv[]){
     
-    int numberOfLines, no1 = 0, no2 = 4, indiceMenorCusto, custo = 0;
-    int k = 2;
+    /*if (argc != 4){
+        cout << "Espera-se 4 argumentos: [no1] [no2] [k]" << endl;
+        exit(1);
+    }*/
+
+
+    int numberOfLines, no1 = 0, no2 = 4, custo = 0, minCusto;
+    long no1_l, no2_l, k_l;
+    long indiceMenorCusto;
+    int k = 3;
+    char *p;
     vector<vector<int> > matriz;
     vector<int> custos;
     vector<int> caminho;
+
+    /*no1_l = strtol(argv[1], &p, 10) - 1;
+    no2_l = strtol(argv[2], &p, 10) - 1;
+    k_l = strtol(argv[3], &p, 10);
+
+    no1 = no1_l;
+    no2 = no2_l;
+    k = k_l;
+
+    cout << no1 << " " << no2 << " " << k << " " << endl;*/
     
     numberOfLines = leTopologia(matriz);
     
     for(int i=0; i< k; i++){
         dijkstra(numberOfLines, matriz, no1, no2, custos, caminho);
         
+        if (caminho.size() == 0){
+            printf("Nao existe o caminho: %d\n", i + 1);
+            break;
+        }
+
         if(caminho.size() > 0){
             for(int k = 0; k < caminho.size(); k++){
                 if(k != caminho.size() - 1){
-                    printf("%d-->", caminho[k]);
+                    printf("%d-->", caminho[k] + 1);
                 }else{
-                    printf("%d\n", caminho[k]);
+                    printf("%d\n", caminho[k]  + 1);
                 }
             }
         }
@@ -53,9 +77,10 @@ int main(int argc, const char *argv[]){
         
         
         indiceMenorCusto = menorCusto(custos);
-        printf("%d", indiceMenorCusto);
         
-        atualizaMatriz(indiceMenorCusto, matriz, caminho);
+        minCusto = int(indiceMenorCusto);
+        
+        atualizaMatriz(minCusto, matriz, caminho);
         
         
         
@@ -73,7 +98,7 @@ int leTopologia(vector<vector<int> >& matrix){
     size_t len = 0;
     int node1_int, node2_int, weight_int;
     
-    fp = fopen("6.txt", "r");
+    fp = fopen("entrada.txt", "r");
     
     //Numero de linhas do arquivo, ou seja numero de nos
     while(!feof(fp)){
@@ -129,12 +154,20 @@ int leTopologia(vector<vector<int> >& matrix){
 void dijkstra(int size, vector<vector<int> >& matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho){
     
     int distancia[size];
-    int i, num,aux;
+    int i, num;
     int minimum, min_index = 0;
     int pai[size];
     vector<int> vetor_aux;
     int visited[size]; // visited[i] = 0 se nó i não foi visitado, visited[i] = 1 caso contrário
     
+    custos.clear();
+    caminho.clear();
+
+    if (no1 == no2){
+        return;
+
+    }
+
     //Seta todas as distancias da origem com um valor grande
     for(i = 0; i < size; i++){
         distancia[i] = 32760;
@@ -193,11 +226,10 @@ void dijkstra(int size, vector<vector<int> >& matriz, int no1, int no2, vector<i
     
 }
 
-int menorCusto(vector<int>& custos){
+long menorCusto(vector<int>& custos){
     int menor = *min_element(custos.begin(), custos.end());
-    int indice  = distance(custos.begin(), find(custos.begin(), custos.end(), menor));
-    printf("%d\n", indice);
-    return indice;
+    return distance(custos.begin(), find(custos.begin(), custos.end(), menor));
+
 }
 
 void atualizaMatriz(int menorCusto, vector<vector<int> >& matriz, vector<int> &caminho){
