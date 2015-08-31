@@ -11,22 +11,35 @@
 
 using namespace std;
 
+//Recebe vetor de custos e retorna custo total
 int custoTotal(vector<int> custos);
+
+//Calcula menor caminho entre os nós [no1] e [no2] e preenche vetores 'caminho' e 'custos'
 void dijkstra(int size, vector<vector<int> >& matriz, int no1, int no2, vector<int>& custos, vector<int>& caminho);
+
+//Le arquivo de topologia, insere o grafo em [matrix] e retorna número de nós
 int leTopologia(vector<vector<int> >& matrix);
+
+ //Encontra índice do nó com aresta de menor custo 
 long menorCusto(vector<int>& custos);
+
+//Remove aresta de menor custo da matriz
 void atualizaMatriz(int menorCusto, vector<vector<int> >& matriz, vector<int> &caminho);
 
 
 int main(int argc, const char *argv[]){
     
-    /*if (argc != 4){
+    if (argc != 4){
         cout << "Espera-se 4 argumentos: [no1] [no2] [k]" << endl;
         exit(1);
-    }*/
+    }
+	 if (argv[1] == argv[2]){
+		 cout << "O no de origem deve ser diferente do no de destino" << endl;
+		 exit(1);
+	 }
 
 
-    int numberOfLines, no1 = 0, no2 = 4, custo = 0, minCusto;
+    int numberOfLines, no1, no2, custo = 0, minCusto;
     long no1_l, no2_l, k_l;
     long indiceMenorCusto;
     int k = 3;
@@ -35,26 +48,24 @@ int main(int argc, const char *argv[]){
     vector<int> custos;
     vector<int> caminho;
 
-    /*no1_l = strtol(argv[1], &p, 10) - 1;
-    no2_l = strtol(argv[2], &p, 10) - 1;
-    k_l = strtol(argv[3], &p, 10);
-
-    no1 = no1_l;
-    no2 = no2_l;
-    k = k_l;
-
-    cout << no1 << " " << no2 << " " << k << " " << endl;*/
+	 no1 = atoi(argv[1]) - 1;
+	 no2 = atoi(argv[2]) - 1;
+	 k = atoi(argv[3]);
     
+	 //Le arquivo de topologia e retorna o número de nós no grafo
     numberOfLines = leTopologia(matriz);
     
     for(int i=0; i< k; i++){
+        //Encontra o primeiro menor caminho 
         dijkstra(numberOfLines, matriz, no1, no2, custos, caminho);
         
+        //Caminho inexistente
         if (caminho.size() == 0){
             printf("Nao existe o caminho: %d\n", i + 1);
             break;
         }
 
+        //Imprime caminho encontrado
         if(caminho.size() > 0){
             for(int k = 0; k < caminho.size(); k++){
                 if(k != caminho.size() - 1){
@@ -64,7 +75,8 @@ int main(int argc, const char *argv[]){
                 }
             }
         }
-        
+
+        //Imprime pesos de cada aresta do caminho encontrado       
         if (custos.size() > 0){
             for(int k = 0; k < custos.size(); k++){
                 printf(" %d", custos[k]);
@@ -72,18 +84,18 @@ int main(int argc, const char *argv[]){
             printf("\n");
         }
         
+        //Imprime custo total do caminho
         custo = custoTotal(custos);
         printf("Custo Total: %d\n", custo);
         
-        
+        //Encontra índice do nó com aresta de menor custo 
         indiceMenorCusto = menorCusto(custos);
-        
+
+        //minCusto recebe o índice do nó com aresta de menor custo
         minCusto = int(indiceMenorCusto);
         
+        //Remove aresta de menor custo no caminho encontrado
         atualizaMatriz(minCusto, matriz, caminho);
-        
-        
-        
     }
     
     
@@ -108,13 +120,14 @@ int leTopologia(vector<vector<int> >& matrix){
         }
     }
     
+    //Realoca tamanho da matriz
     matrix.resize(numberOfLines);
     for(int i=0; i< numberOfLines; i++){
         matrix[i].resize(numberOfLines);
     }
     
     
-    
+    //Retorna para o início do arquivo
     fseek(fp, 0, SEEK_SET);
     
     //Loop para ler todas as linhas do arquivo
@@ -210,14 +223,13 @@ void dijkstra(int size, vector<vector<int> >& matriz, int no1, int no2, vector<i
     }
     
     
-    //Preenche vetor auxiliar com menor caminho
+    //Preenche vetor caminho com menor caminho
     caminho.push_back(no2);
     for(i=1;i<size;i++){
         caminho.push_back(pai[caminho.at(i-1)]); //vetor_aux[i] = pai[vetor_aux[i-1]];
         if(pai[caminho.at(i-1)] == no1) break;
     }
-    //for(i=0; i < aux; i++)
-    //    caminho[i] = vetor_aux[aux-1-i];
+    //Inverte vetor caminho para impressao correta
     reverse(caminho.begin(), caminho.end());
     
     //Preenche vetor com custos do menor caminho
