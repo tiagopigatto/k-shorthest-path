@@ -1,0 +1,4246 @@
+Teste 1
+Origem: 	[1]
+Destino:	[1]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 2
+Origem: 	[1]
+Destino:	[2]
+1-->2
+ 1  
+Custo Total: 1
+1-->3-->2
+ 2   3  
+Custo Total: 5
+Nao existe o caminho: 3
+
+
+Teste 3
+Origem: 	[1]
+Destino:	[3]
+1-->3
+ 2  
+Custo Total: 2
+1-->2-->3
+ 1   3  
+Custo Total: 4
+Nao existe o caminho: 3
+
+
+Teste 4
+Origem: 	[1]
+Destino:	[4]
+1-->2-->4
+ 1   3  
+Custo Total: 4
+1-->3-->2-->4
+ 2   3   3  
+Custo Total: 8
+Nao existe o caminho: 3
+
+
+Teste 5
+Origem: 	[1]
+Destino:	[5]
+1-->2-->4-->5
+ 1   3   5  
+Custo Total: 9
+1-->3-->2-->4-->5
+ 2   3   3   5  
+Custo Total: 13
+Nao existe o caminho: 3
+
+
+Teste 6
+Origem: 	[1]
+Destino:	[6]
+1-->2-->4-->6
+ 1   3   8  
+Custo Total: 12
+1-->3-->2-->4-->6
+ 2   3   3   8  
+Custo Total: 16
+Nao existe o caminho: 3
+
+
+Teste 7
+Origem: 	[1]
+Destino:	[7]
+1-->2-->4-->5-->7
+ 1   3   5   3  
+Custo Total: 12
+1-->3-->14-->13-->7
+ 2   1   7   5  
+Custo Total: 15
+1-->3-->2-->4-->5-->7
+ 2   3   3   5   3  
+Custo Total: 16
+
+
+Teste 8
+Origem: 	[1]
+Destino:	[8]
+1-->2-->4-->5-->7-->8
+ 1   3   5   3   2  
+Custo Total: 14
+1-->3-->14-->13-->18-->9-->8
+ 2   1   7   1   2   3  
+Custo Total: 16
+1-->3-->2-->4-->5-->7-->8
+ 2   3   3   5   3   2  
+Custo Total: 18
+
+
+Teste 9
+Origem: 	[1]
+Destino:	[9]
+1-->3-->14-->13-->18-->9
+ 2   1   7   1   2  
+Custo Total: 13
+1-->2-->4-->5-->7-->8-->9
+ 1   3   5   3   2   3  
+Custo Total: 17
+1-->3-->2-->4-->5-->7-->8-->9
+ 2   3   3   5   3   2   3  
+Custo Total: 21
+
+
+Teste 10
+Origem: 	[1]
+Destino:	[10]
+1-->3-->14-->13-->18-->9-->10
+ 2   1   7   1   2   2  
+Custo Total: 15
+1-->2-->4-->5-->7-->8-->9-->10
+ 1   3   5   3   2   3   2  
+Custo Total: 19
+1-->3-->2-->4-->5-->7-->8-->9-->10
+ 2   3   3   5   3   2   3   2  
+Custo Total: 23
+
+
+Teste 11
+Origem: 	[1]
+Destino:	[11]
+1-->2-->4-->6-->11
+ 1   3   8   1  
+Custo Total: 13
+1-->3-->2-->4-->6-->11
+ 2   3   3   8   1  
+Custo Total: 17
+1-->3-->14-->13-->18-->9-->10-->12-->11
+ 2   1   7   1   2   2   7   4  
+Custo Total: 26
+
+
+Teste 12
+Origem: 	[1]
+Destino:	[12]
+1-->2-->4-->6-->11-->12
+ 1   3   8   1   4  
+Custo Total: 17
+1-->3-->2-->4-->6-->11-->12
+ 2   3   3   8   1   4  
+Custo Total: 21
+1-->3-->14-->13-->18-->9-->10-->12
+ 2   1   7   1   2   2   7  
+Custo Total: 22
+
+
+Teste 13
+Origem: 	[1]
+Destino:	[13]
+1-->3-->14-->13
+ 2   1   7  
+Custo Total: 10
+1-->2-->4-->5-->7-->13
+ 1   3   5   3   5  
+Custo Total: 17
+1-->3-->2-->4-->5-->7-->13
+ 2   3   3   5   3   5  
+Custo Total: 21
+
+
+Teste 14
+Origem: 	[1]
+Destino:	[14]
+1-->3-->14
+ 2   1  
+Custo Total: 3
+1-->2-->4-->5-->7-->13-->14
+ 1   3   5   3   5   7  
+Custo Total: 24
+1-->3-->2-->4-->5-->7-->13-->14
+ 2   3   3   5   3   5   7  
+Custo Total: 28
+
+
+Teste 15
+Origem: 	[1]
+Destino:	[15]
+1-->3-->14-->15
+ 2   1   2  
+Custo Total: 5
+1-->2-->4-->5-->7-->13-->14-->15
+ 1   3   5   3   5   7   2  
+Custo Total: 26
+1-->3-->2-->4-->5-->7-->13-->14-->15
+ 2   3   3   5   3   5   7   2  
+Custo Total: 30
+
+
+Teste 16
+Origem: 	[1]
+Destino:	[16]
+1-->3-->14-->15-->16
+ 2   1   2   5  
+Custo Total: 10
+1-->2-->4-->5-->7-->13-->18-->17-->16
+ 1   3   5   3   5   1   4   9  
+Custo Total: 31
+1-->3-->2-->4-->5-->7-->13-->18-->17-->16
+ 2   3   3   5   3   5   1   4   9  
+Custo Total: 35
+
+
+Teste 17
+Origem: 	[1]
+Destino:	[17]
+1-->3-->14-->13-->18-->17
+ 2   1   7   1   4  
+Custo Total: 15
+1-->2-->4-->5-->7-->13-->18-->17
+ 1   3   5   3   5   1   4  
+Custo Total: 22
+1-->3-->2-->4-->5-->7-->13-->18-->17
+ 2   3   3   5   3   5   1   4  
+Custo Total: 26
+
+
+Teste 18
+Origem: 	[1]
+Destino:	[18]
+1-->3-->14-->13-->18
+ 2   1   7   1  
+Custo Total: 11
+1-->2-->4-->5-->7-->13-->18
+ 1   3   5   3   5   1  
+Custo Total: 18
+1-->3-->2-->4-->5-->7-->13-->18
+ 2   3   3   5   3   5   1  
+Custo Total: 22
+
+
+Teste 19
+Origem: 	[2]
+Destino:	[1]
+2-->1
+ 1  
+Custo Total: 1
+2-->3-->1
+ 3   2  
+Custo Total: 5
+Nao existe o caminho: 3
+
+
+Teste 20
+Origem: 	[2]
+Destino:	[2]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 21
+Origem: 	[2]
+Destino:	[3]
+2-->3
+ 3  
+Custo Total: 3
+2-->1-->3
+ 1   2  
+Custo Total: 3
+2-->4-->5-->3
+ 3   5   2  
+Custo Total: 10
+
+
+Teste 22
+Origem: 	[2]
+Destino:	[4]
+2-->4
+ 3  
+Custo Total: 3
+2-->3-->14-->13-->7-->5-->4
+ 3   1   7   5   3   5  
+Custo Total: 24
+Nao existe o caminho: 3
+
+
+Teste 23
+Origem: 	[2]
+Destino:	[5]
+2-->4-->5
+ 3   5  
+Custo Total: 8
+2-->3-->14-->13-->7-->5
+ 3   1   7   5   3  
+Custo Total: 19
+Nao existe o caminho: 3
+
+
+Teste 24
+Origem: 	[2]
+Destino:	[6]
+2-->4-->6
+ 3   8  
+Custo Total: 11
+2-->3-->14-->13-->18-->9-->8-->6
+ 3   1   7   1   2   3   2  
+Custo Total: 19
+Nao existe o caminho: 3
+
+
+Teste 25
+Origem: 	[2]
+Destino:	[7]
+2-->4-->5-->7
+ 3   5   3  
+Custo Total: 11
+2-->3-->14-->13-->7
+ 3   1   7   5  
+Custo Total: 16
+Nao existe o caminho: 3
+
+
+Teste 26
+Origem: 	[2]
+Destino:	[8]
+2-->4-->5-->7-->8
+ 3   5   3   2  
+Custo Total: 13
+2-->4-->6-->8
+ 3   8   2  
+Custo Total: 13
+2-->3-->14-->13-->18-->9-->8
+ 3   1   7   1   2   3  
+Custo Total: 17
+
+
+Teste 27
+Origem: 	[2]
+Destino:	[9]
+2-->3-->14-->13-->18-->9
+ 3   1   7   1   2  
+Custo Total: 14
+2-->4-->5-->7-->8-->9
+ 3   5   3   2   3  
+Custo Total: 16
+2-->4-->6-->8-->9
+ 3   8   2   3  
+Custo Total: 16
+
+
+Teste 28
+Origem: 	[2]
+Destino:	[10]
+2-->3-->14-->13-->18-->9-->10
+ 3   1   7   1   2   2  
+Custo Total: 16
+2-->4-->5-->7-->8-->9-->10
+ 3   5   3   2   3   2  
+Custo Total: 18
+2-->4-->6-->8-->9-->10
+ 3   8   2   3   2  
+Custo Total: 18
+
+
+Teste 29
+Origem: 	[2]
+Destino:	[11]
+2-->4-->6-->11
+ 3   8   1  
+Custo Total: 12
+2-->3-->14-->13-->18-->9-->10-->12-->11
+ 3   1   7   1   2   2   7   4  
+Custo Total: 27
+2-->4-->5-->7-->8-->9-->10-->12-->11
+ 3   5   3   2   3   2   7   4  
+Custo Total: 29
+
+
+Teste 30
+Origem: 	[2]
+Destino:	[12]
+2-->4-->6-->11-->12
+ 3   8   1   4  
+Custo Total: 16
+2-->3-->14-->13-->18-->9-->10-->12
+ 3   1   7   1   2   2   7  
+Custo Total: 23
+2-->4-->5-->7-->8-->9-->10-->12
+ 3   5   3   2   3   2   7  
+Custo Total: 25
+
+
+Teste 31
+Origem: 	[2]
+Destino:	[13]
+2-->3-->14-->13
+ 3   1   7  
+Custo Total: 11
+2-->4-->5-->7-->13
+ 3   5   3   5  
+Custo Total: 16
+Nao existe o caminho: 3
+
+
+Teste 32
+Origem: 	[2]
+Destino:	[14]
+2-->3-->14
+ 3   1  
+Custo Total: 4
+2-->4-->5-->7-->13-->14
+ 3   5   3   5   7  
+Custo Total: 23
+Nao existe o caminho: 3
+
+
+Teste 33
+Origem: 	[2]
+Destino:	[15]
+2-->3-->14-->15
+ 3   1   2  
+Custo Total: 6
+2-->4-->5-->7-->13-->14-->15
+ 3   5   3   5   7   2  
+Custo Total: 25
+2-->4-->5-->7-->13-->18-->17-->16-->15
+ 3   5   3   5   1   4   9   5  
+Custo Total: 35
+
+
+Teste 34
+Origem: 	[2]
+Destino:	[16]
+2-->3-->14-->15-->16
+ 3   1   2   5  
+Custo Total: 11
+2-->4-->5-->7-->13-->18-->17-->16
+ 3   5   3   5   1   4   9  
+Custo Total: 30
+2-->4-->5-->7-->13-->14-->15-->16
+ 3   5   3   5   7   2   5  
+Custo Total: 30
+
+
+Teste 35
+Origem: 	[2]
+Destino:	[17]
+2-->3-->14-->13-->18-->17
+ 3   1   7   1   4  
+Custo Total: 16
+2-->4-->5-->7-->13-->18-->17
+ 3   5   3   5   1   4  
+Custo Total: 21
+2-->4-->5-->7-->13-->14-->15-->16-->17
+ 3   5   3   5   7   2   5   9  
+Custo Total: 39
+
+
+Teste 36
+Origem: 	[2]
+Destino:	[18]
+2-->3-->14-->13-->18
+ 3   1   7   1  
+Custo Total: 12
+2-->4-->5-->7-->13-->18
+ 3   5   3   5   1  
+Custo Total: 17
+2-->4-->5-->7-->13-->14-->15-->16-->17-->18
+ 3   5   3   5   7   2   5   9   4  
+Custo Total: 43
+
+
+Teste 37
+Origem: 	[3]
+Destino:	[1]
+3-->1
+ 2  
+Custo Total: 2
+3-->2-->1
+ 3   1  
+Custo Total: 4
+Nao existe o caminho: 3
+
+
+Teste 38
+Origem: 	[3]
+Destino:	[2]
+3-->2
+ 3  
+Custo Total: 3
+3-->1-->2
+ 2   1  
+Custo Total: 3
+3-->14-->13-->7-->5-->4-->2
+ 1   7   5   3   5   3  
+Custo Total: 24
+
+
+Teste 39
+Origem: 	[3]
+Destino:	[3]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 40
+Origem: 	[3]
+Destino:	[4]
+3-->2-->4
+ 3   3  
+Custo Total: 6
+3-->1-->2-->4
+ 2   1   3  
+Custo Total: 6
+3-->14-->13-->7-->5-->4
+ 1   7   5   3   5  
+Custo Total: 21
+
+
+Teste 41
+Origem: 	[3]
+Destino:	[5]
+3-->2-->4-->5
+ 3   3   5  
+Custo Total: 11
+3-->1-->2-->4-->5
+ 2   1   3   5  
+Custo Total: 11
+3-->14-->13-->7-->5
+ 1   7   5   3  
+Custo Total: 16
+
+
+Teste 42
+Origem: 	[3]
+Destino:	[6]
+3-->2-->4-->6
+ 3   3   8  
+Custo Total: 14
+3-->1-->2-->4-->6
+ 2   1   3   8  
+Custo Total: 14
+3-->14-->13-->18-->9-->8-->6
+ 1   7   1   2   3   2  
+Custo Total: 16
+
+
+Teste 43
+Origem: 	[3]
+Destino:	[7]
+3-->14-->13-->7
+ 1   7   5  
+Custo Total: 13
+3-->2-->4-->5-->7
+ 3   3   5   3  
+Custo Total: 14
+3-->1-->2-->4-->5-->7
+ 2   1   3   5   3  
+Custo Total: 14
+
+
+Teste 44
+Origem: 	[3]
+Destino:	[8]
+3-->14-->13-->18-->9-->8
+ 1   7   1   2   3  
+Custo Total: 14
+3-->2-->4-->5-->7-->8
+ 3   3   5   3   2  
+Custo Total: 16
+3-->2-->4-->6-->8
+ 3   3   8   2  
+Custo Total: 16
+
+
+Teste 45
+Origem: 	[3]
+Destino:	[9]
+3-->14-->13-->18-->9
+ 1   7   1   2  
+Custo Total: 11
+3-->2-->4-->5-->7-->8-->9
+ 3   3   5   3   2   3  
+Custo Total: 19
+3-->2-->4-->6-->8-->9
+ 3   3   8   2   3  
+Custo Total: 19
+
+
+Teste 46
+Origem: 	[3]
+Destino:	[10]
+3-->14-->13-->18-->9-->10
+ 1   7   1   2   2  
+Custo Total: 13
+3-->2-->4-->5-->7-->8-->9-->10
+ 3   3   5   3   2   3   2  
+Custo Total: 21
+3-->2-->4-->6-->8-->9-->10
+ 3   3   8   2   3   2  
+Custo Total: 21
+
+
+Teste 47
+Origem: 	[3]
+Destino:	[11]
+3-->2-->4-->6-->11
+ 3   3   8   1  
+Custo Total: 15
+3-->14-->13-->18-->9-->10-->12-->11
+ 1   7   1   2   2   7   4  
+Custo Total: 24
+3-->2-->4-->5-->7-->8-->9-->10-->12-->11
+ 3   3   5   3   2   3   2   7   4  
+Custo Total: 32
+
+
+Teste 48
+Origem: 	[3]
+Destino:	[12]
+3-->2-->4-->6-->11-->12
+ 3   3   8   1   4  
+Custo Total: 19
+3-->14-->13-->18-->9-->10-->12
+ 1   7   1   2   2   7  
+Custo Total: 20
+3-->2-->4-->5-->7-->8-->9-->10-->12
+ 3   3   5   3   2   3   2   7  
+Custo Total: 28
+
+
+Teste 49
+Origem: 	[3]
+Destino:	[13]
+3-->14-->13
+ 1   7  
+Custo Total: 8
+3-->2-->4-->5-->7-->13
+ 3   3   5   3   5  
+Custo Total: 19
+3-->1-->2-->4-->5-->7-->13
+ 2   1   3   5   3   5  
+Custo Total: 19
+
+
+Teste 50
+Origem: 	[3]
+Destino:	[14]
+3-->14
+ 1  
+Custo Total: 1
+3-->2-->4-->5-->7-->13-->14
+ 3   3   5   3   5   7  
+Custo Total: 26
+3-->1-->2-->4-->5-->7-->13-->14
+ 2   1   3   5   3   5   7  
+Custo Total: 26
+
+
+Teste 51
+Origem: 	[3]
+Destino:	[15]
+3-->14-->15
+ 1   2  
+Custo Total: 3
+3-->2-->4-->5-->7-->13-->14-->15
+ 3   3   5   3   5   7   2  
+Custo Total: 28
+3-->2-->4-->5-->7-->13-->18-->17-->16-->15
+ 3   3   5   3   5   1   4   9   5  
+Custo Total: 38
+
+
+Teste 52
+Origem: 	[3]
+Destino:	[16]
+3-->14-->15-->16
+ 1   2   5  
+Custo Total: 8
+3-->2-->4-->5-->7-->13-->18-->17-->16
+ 3   3   5   3   5   1   4   9  
+Custo Total: 33
+3-->2-->4-->5-->7-->13-->14-->15-->16
+ 3   3   5   3   5   7   2   5  
+Custo Total: 33
+
+
+Teste 53
+Origem: 	[3]
+Destino:	[17]
+3-->14-->13-->18-->17
+ 1   7   1   4  
+Custo Total: 13
+3-->2-->4-->5-->7-->13-->18-->17
+ 3   3   5   3   5   1   4  
+Custo Total: 24
+3-->2-->4-->5-->7-->13-->14-->15-->16-->17
+ 3   3   5   3   5   7   2   5   9  
+Custo Total: 42
+
+
+Teste 54
+Origem: 	[3]
+Destino:	[18]
+3-->14-->13-->18
+ 1   7   1  
+Custo Total: 9
+3-->2-->4-->5-->7-->13-->18
+ 3   3   5   3   5   1  
+Custo Total: 20
+3-->2-->4-->5-->7-->13-->14-->15-->16-->17-->18
+ 3   3   5   3   5   7   2   5   9   4  
+Custo Total: 46
+
+
+Teste 55
+Origem: 	[4]
+Destino:	[1]
+4-->2-->1
+ 3   1  
+Custo Total: 4
+4-->2-->3-->1
+ 3   3   2  
+Custo Total: 8
+Nao existe o caminho: 3
+
+
+Teste 56
+Origem: 	[4]
+Destino:	[2]
+4-->2
+ 3  
+Custo Total: 3
+4-->5-->3-->2
+ 5   2   3  
+Custo Total: 10
+4-->5-->7-->13-->14-->3-->2
+ 5   3   5   7   1   3  
+Custo Total: 24
+
+
+Teste 57
+Origem: 	[4]
+Destino:	[3]
+4-->2-->3
+ 3   3  
+Custo Total: 6
+4-->5-->3
+ 5   2  
+Custo Total: 7
+4-->5-->7-->13-->14-->3
+ 5   3   5   7   1  
+Custo Total: 21
+
+
+Teste 58
+Origem: 	[4]
+Destino:	[4]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 59
+Origem: 	[4]
+Destino:	[5]
+4-->5
+ 5  
+Custo Total: 5
+4-->6-->5
+ 8   3  
+Custo Total: 11
+4-->6-->8-->7-->5
+ 8   2   2   3  
+Custo Total: 15
+
+
+Teste 60
+Origem: 	[4]
+Destino:	[6]
+4-->6
+ 8  
+Custo Total: 8
+4-->5-->6
+ 5   3  
+Custo Total: 8
+4-->5-->7-->8-->6
+ 5   3   2   2  
+Custo Total: 12
+
+
+Teste 61
+Origem: 	[4]
+Destino:	[7]
+4-->5-->7
+ 5   3  
+Custo Total: 8
+4-->6-->8-->7
+ 8   2   2  
+Custo Total: 12
+4-->2-->3-->14-->13-->7
+ 3   3   1   7   5  
+Custo Total: 19
+
+
+Teste 62
+Origem: 	[4]
+Destino:	[8]
+4-->5-->7-->8
+ 5   3   2  
+Custo Total: 10
+4-->6-->8
+ 8   2  
+Custo Total: 10
+4-->5-->7-->13-->18-->9-->8
+ 5   3   5   1   2   3  
+Custo Total: 19
+
+
+Teste 63
+Origem: 	[4]
+Destino:	[9]
+4-->5-->7-->8-->9
+ 5   3   2   3  
+Custo Total: 13
+4-->6-->8-->9
+ 8   2   3  
+Custo Total: 13
+4-->5-->7-->13-->18-->9
+ 5   3   5   1   2  
+Custo Total: 16
+
+
+Teste 64
+Origem: 	[4]
+Destino:	[10]
+4-->5-->7-->8-->9-->10
+ 5   3   2   3   2  
+Custo Total: 15
+4-->6-->8-->9-->10
+ 8   2   3   2  
+Custo Total: 15
+4-->5-->7-->13-->18-->9-->10
+ 5   3   5   1   2   2  
+Custo Total: 18
+
+
+Teste 65
+Origem: 	[4]
+Destino:	[11]
+4-->6-->11
+ 8   1  
+Custo Total: 9
+4-->5-->7-->8-->9-->10-->12-->11
+ 5   3   2   3   2   7   4  
+Custo Total: 26
+4-->6-->8-->9-->10-->12-->11
+ 8   2   3   2   7   4  
+Custo Total: 26
+
+
+Teste 66
+Origem: 	[4]
+Destino:	[12]
+4-->6-->11-->12
+ 8   1   4  
+Custo Total: 13
+4-->5-->7-->8-->9-->10-->12
+ 5   3   2   3   2   7  
+Custo Total: 22
+4-->6-->8-->9-->10-->12
+ 8   2   3   2   7  
+Custo Total: 22
+
+
+Teste 67
+Origem: 	[4]
+Destino:	[13]
+4-->5-->7-->13
+ 5   3   5  
+Custo Total: 13
+4-->2-->3-->14-->13
+ 3   3   1   7  
+Custo Total: 14
+4-->6-->8-->7-->13
+ 8   2   2   5  
+Custo Total: 17
+
+
+Teste 68
+Origem: 	[4]
+Destino:	[14]
+4-->2-->3-->14
+ 3   3   1  
+Custo Total: 7
+4-->5-->7-->13-->14
+ 5   3   5   7  
+Custo Total: 20
+4-->6-->8-->7-->13-->14
+ 8   2   2   5   7  
+Custo Total: 24
+
+
+Teste 69
+Origem: 	[4]
+Destino:	[15]
+4-->2-->3-->14-->15
+ 3   3   1   2  
+Custo Total: 9
+4-->5-->7-->13-->14-->15
+ 5   3   5   7   2  
+Custo Total: 22
+4-->5-->7-->13-->18-->17-->16-->15
+ 5   3   5   1   4   9   5  
+Custo Total: 32
+
+
+Teste 70
+Origem: 	[4]
+Destino:	[16]
+4-->2-->3-->14-->15-->16
+ 3   3   1   2   5  
+Custo Total: 14
+4-->5-->7-->13-->18-->17-->16
+ 5   3   5   1   4   9  
+Custo Total: 27
+4-->5-->7-->13-->14-->15-->16
+ 5   3   5   7   2   5  
+Custo Total: 27
+
+
+Teste 71
+Origem: 	[4]
+Destino:	[17]
+4-->5-->7-->13-->18-->17
+ 5   3   5   1   4  
+Custo Total: 18
+4-->2-->3-->14-->15-->16-->17
+ 3   3   1   2   5   9  
+Custo Total: 23
+4-->5-->7-->13-->14-->15-->16-->17
+ 5   3   5   7   2   5   9  
+Custo Total: 36
+
+
+Teste 72
+Origem: 	[4]
+Destino:	[18]
+4-->5-->7-->13-->18
+ 5   3   5   1  
+Custo Total: 14
+4-->2-->3-->14-->15-->16-->17-->18
+ 3   3   1   2   5   9   4  
+Custo Total: 27
+4-->5-->7-->13-->14-->15-->16-->17-->18
+ 5   3   5   7   2   5   9   4  
+Custo Total: 40
+
+
+Teste 73
+Origem: 	[5]
+Destino:	[1]
+5-->3-->1
+ 2   2  
+Custo Total: 4
+5-->4-->2-->1
+ 5   3   1  
+Custo Total: 9
+5-->4-->2-->3-->1
+ 5   3   3   2  
+Custo Total: 13
+
+
+Teste 74
+Origem: 	[5]
+Destino:	[2]
+5-->3-->2
+ 2   3  
+Custo Total: 5
+5-->4-->2
+ 5   3  
+Custo Total: 8
+5-->7-->13-->14-->3-->2
+ 3   5   7   1   3  
+Custo Total: 19
+
+
+Teste 75
+Origem: 	[5]
+Destino:	[3]
+5-->3
+ 2  
+Custo Total: 2
+5-->4-->2-->3
+ 5   3   3  
+Custo Total: 11
+5-->7-->13-->14-->3
+ 3   5   7   1  
+Custo Total: 16
+
+
+Teste 76
+Origem: 	[5]
+Destino:	[4]
+5-->4
+ 5  
+Custo Total: 5
+5-->3-->2-->4
+ 2   3   3  
+Custo Total: 8
+5-->6-->4
+ 3   8  
+Custo Total: 11
+
+
+Teste 77
+Origem: 	[5]
+Destino:	[5]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 78
+Origem: 	[5]
+Destino:	[6]
+5-->6
+ 3  
+Custo Total: 3
+5-->7-->8-->6
+ 3   2   2  
+Custo Total: 7
+5-->4-->6
+ 5   8  
+Custo Total: 13
+
+
+Teste 79
+Origem: 	[5]
+Destino:	[7]
+5-->7
+ 3  
+Custo Total: 3
+5-->6-->8-->7
+ 3   2   2  
+Custo Total: 7
+5-->3-->14-->13-->7
+ 2   1   7   5  
+Custo Total: 15
+
+
+Teste 80
+Origem: 	[5]
+Destino:	[8]
+5-->7-->8
+ 3   2  
+Custo Total: 5
+5-->6-->8
+ 3   2  
+Custo Total: 5
+5-->7-->13-->18-->9-->8
+ 3   5   1   2   3  
+Custo Total: 14
+
+
+Teste 81
+Origem: 	[5]
+Destino:	[9]
+5-->7-->8-->9
+ 3   2   3  
+Custo Total: 8
+5-->6-->8-->9
+ 3   2   3  
+Custo Total: 8
+5-->7-->13-->18-->9
+ 3   5   1   2  
+Custo Total: 11
+
+
+Teste 82
+Origem: 	[5]
+Destino:	[10]
+5-->7-->8-->9-->10
+ 3   2   3   2  
+Custo Total: 10
+5-->6-->8-->9-->10
+ 3   2   3   2  
+Custo Total: 10
+5-->7-->13-->18-->9-->10
+ 3   5   1   2   2  
+Custo Total: 13
+
+
+Teste 83
+Origem: 	[5]
+Destino:	[11]
+5-->6-->11
+ 3   1  
+Custo Total: 4
+5-->7-->8-->9-->10-->12-->11
+ 3   2   3   2   7   4  
+Custo Total: 21
+5-->6-->8-->9-->10-->12-->11
+ 3   2   3   2   7   4  
+Custo Total: 21
+
+
+Teste 84
+Origem: 	[5]
+Destino:	[12]
+5-->6-->11-->12
+ 3   1   4  
+Custo Total: 8
+5-->7-->8-->9-->10-->12
+ 3   2   3   2   7  
+Custo Total: 17
+5-->6-->8-->9-->10-->12
+ 3   2   3   2   7  
+Custo Total: 17
+
+
+Teste 85
+Origem: 	[5]
+Destino:	[13]
+5-->7-->13
+ 3   5  
+Custo Total: 8
+5-->3-->14-->13
+ 2   1   7  
+Custo Total: 10
+5-->6-->8-->7-->13
+ 3   2   2   5  
+Custo Total: 12
+
+
+Teste 86
+Origem: 	[5]
+Destino:	[14]
+5-->3-->14
+ 2   1  
+Custo Total: 3
+5-->7-->13-->14
+ 3   5   7  
+Custo Total: 15
+5-->6-->8-->7-->13-->14
+ 3   2   2   5   7  
+Custo Total: 19
+
+
+Teste 87
+Origem: 	[5]
+Destino:	[15]
+5-->3-->14-->15
+ 2   1   2  
+Custo Total: 5
+5-->7-->13-->14-->15
+ 3   5   7   2  
+Custo Total: 17
+5-->7-->13-->18-->17-->16-->15
+ 3   5   1   4   9   5  
+Custo Total: 27
+
+
+Teste 88
+Origem: 	[5]
+Destino:	[16]
+5-->3-->14-->15-->16
+ 2   1   2   5  
+Custo Total: 10
+5-->7-->13-->18-->17-->16
+ 3   5   1   4   9  
+Custo Total: 22
+5-->7-->13-->14-->15-->16
+ 3   5   7   2   5  
+Custo Total: 22
+
+
+Teste 89
+Origem: 	[5]
+Destino:	[17]
+5-->7-->13-->18-->17
+ 3   5   1   4  
+Custo Total: 13
+5-->3-->14-->15-->16-->17
+ 2   1   2   5   9  
+Custo Total: 19
+5-->7-->13-->14-->15-->16-->17
+ 3   5   7   2   5   9  
+Custo Total: 31
+
+
+Teste 90
+Origem: 	[5]
+Destino:	[18]
+5-->7-->13-->18
+ 3   5   1  
+Custo Total: 9
+5-->3-->14-->15-->16-->17-->18
+ 2   1   2   5   9   4  
+Custo Total: 23
+5-->7-->13-->14-->15-->16-->17-->18
+ 3   5   7   2   5   9   4  
+Custo Total: 35
+
+
+Teste 91
+Origem: 	[6]
+Destino:	[1]
+6-->5-->3-->1
+ 3   2   2  
+Custo Total: 7
+6-->4-->2-->1
+ 8   3   1  
+Custo Total: 12
+6-->4-->2-->3-->1
+ 8   3   3   2  
+Custo Total: 16
+
+
+Teste 92
+Origem: 	[6]
+Destino:	[2]
+6-->5-->3-->2
+ 3   2   3  
+Custo Total: 8
+6-->4-->2
+ 8   3  
+Custo Total: 11
+6-->8-->7-->13-->14-->3-->2
+ 2   2   5   7   1   3  
+Custo Total: 20
+
+
+Teste 93
+Origem: 	[6]
+Destino:	[3]
+6-->5-->3
+ 3   2  
+Custo Total: 5
+6-->4-->2-->3
+ 8   3   3  
+Custo Total: 14
+6-->8-->7-->13-->14-->3
+ 2   2   5   7   1  
+Custo Total: 17
+
+
+Teste 94
+Origem: 	[6]
+Destino:	[4]
+6-->4
+ 8  
+Custo Total: 8
+6-->5-->4
+ 3   5  
+Custo Total: 8
+6-->8-->7-->5-->4
+ 2   2   3   5  
+Custo Total: 12
+
+
+Teste 95
+Origem: 	[6]
+Destino:	[5]
+6-->5
+ 3  
+Custo Total: 3
+6-->8-->7-->5
+ 2   2   3  
+Custo Total: 7
+6-->4-->5
+ 8   5  
+Custo Total: 13
+
+
+Teste 96
+Origem: 	[6]
+Destino:	[6]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 97
+Origem: 	[6]
+Destino:	[7]
+6-->8-->7
+ 2   2  
+Custo Total: 4
+6-->5-->7
+ 3   3  
+Custo Total: 6
+6-->4-->5-->7
+ 8   5   3  
+Custo Total: 16
+
+
+Teste 98
+Origem: 	[6]
+Destino:	[8]
+6-->8
+ 2  
+Custo Total: 2
+6-->5-->7-->8
+ 3   3   2  
+Custo Total: 8
+6-->5-->7-->13-->18-->9-->8
+ 3   3   5   1   2   3  
+Custo Total: 17
+
+
+Teste 99
+Origem: 	[6]
+Destino:	[9]
+6-->8-->9
+ 2   3  
+Custo Total: 5
+6-->5-->7-->8-->9
+ 3   3   2   3  
+Custo Total: 11
+6-->5-->7-->13-->18-->9
+ 3   3   5   1   2  
+Custo Total: 14
+
+
+Teste 100
+Origem: 	[6]
+Destino:	[10]
+6-->8-->9-->10
+ 2   3   2  
+Custo Total: 7
+6-->11-->12-->10
+ 1   4   7  
+Custo Total: 12
+6-->5-->7-->8-->9-->10
+ 3   3   2   3   2  
+Custo Total: 13
+
+
+Teste 101
+Origem: 	[6]
+Destino:	[11]
+6-->11
+ 1  
+Custo Total: 1
+6-->8-->9-->10-->12-->11
+ 2   3   2   7   4  
+Custo Total: 18
+6-->5-->7-->8-->9-->10-->12-->11
+ 3   3   2   3   2   7   4  
+Custo Total: 24
+
+
+Teste 102
+Origem: 	[6]
+Destino:	[12]
+6-->11-->12
+ 1   4  
+Custo Total: 5
+6-->8-->9-->10-->12
+ 2   3   2   7  
+Custo Total: 14
+6-->5-->7-->8-->9-->10-->12
+ 3   3   2   3   2   7  
+Custo Total: 20
+
+
+Teste 103
+Origem: 	[6]
+Destino:	[13]
+6-->8-->7-->13
+ 2   2   5  
+Custo Total: 9
+6-->5-->7-->13
+ 3   3   5  
+Custo Total: 11
+6-->4-->5-->7-->13
+ 8   5   3   5  
+Custo Total: 21
+
+
+Teste 104
+Origem: 	[6]
+Destino:	[14]
+6-->5-->3-->14
+ 3   2   1  
+Custo Total: 6
+6-->8-->7-->13-->14
+ 2   2   5   7  
+Custo Total: 16
+6-->5-->7-->13-->14
+ 3   3   5   7  
+Custo Total: 18
+
+
+Teste 105
+Origem: 	[6]
+Destino:	[15]
+6-->5-->3-->14-->15
+ 3   2   1   2  
+Custo Total: 8
+6-->8-->7-->13-->14-->15
+ 2   2   5   7   2  
+Custo Total: 18
+6-->5-->7-->13-->14-->15
+ 3   3   5   7   2  
+Custo Total: 20
+
+
+Teste 106
+Origem: 	[6]
+Destino:	[16]
+6-->5-->3-->14-->15-->16
+ 3   2   1   2   5  
+Custo Total: 13
+6-->8-->7-->13-->18-->17-->16
+ 2   2   5   1   4   9  
+Custo Total: 23
+6-->8-->7-->13-->14-->15-->16
+ 2   2   5   7   2   5  
+Custo Total: 23
+
+
+Teste 107
+Origem: 	[6]
+Destino:	[17]
+6-->8-->7-->13-->18-->17
+ 2   2   5   1   4  
+Custo Total: 14
+6-->5-->3-->14-->15-->16-->17
+ 3   2   1   2   5   9  
+Custo Total: 22
+6-->8-->7-->13-->14-->15-->16-->17
+ 2   2   5   7   2   5   9  
+Custo Total: 32
+
+
+Teste 108
+Origem: 	[6]
+Destino:	[18]
+6-->8-->7-->13-->18
+ 2   2   5   1  
+Custo Total: 10
+6-->5-->3-->14-->15-->16-->17-->18
+ 3   2   1   2   5   9   4  
+Custo Total: 26
+6-->8-->7-->13-->14-->15-->16-->17-->18
+ 2   2   5   7   2   5   9   4  
+Custo Total: 36
+
+
+Teste 109
+Origem: 	[7]
+Destino:	[1]
+7-->5-->3-->1
+ 3   2   2  
+Custo Total: 7
+7-->5-->4-->2-->1
+ 3   5   3   1  
+Custo Total: 12
+7-->13-->14-->3-->1
+ 5   7   1   2  
+Custo Total: 15
+
+
+Teste 110
+Origem: 	[7]
+Destino:	[2]
+7-->5-->3-->2
+ 3   2   3  
+Custo Total: 8
+7-->5-->4-->2
+ 3   5   3  
+Custo Total: 11
+7-->8-->6-->4-->2
+ 2   2   8   3  
+Custo Total: 15
+
+
+Teste 111
+Origem: 	[7]
+Destino:	[3]
+7-->5-->3
+ 3   2  
+Custo Total: 5
+7-->13-->14-->3
+ 5   7   1  
+Custo Total: 13
+7-->5-->4-->2-->3
+ 3   5   3   3  
+Custo Total: 14
+
+
+Teste 112
+Origem: 	[7]
+Destino:	[4]
+7-->5-->4
+ 3   5  
+Custo Total: 8
+7-->8-->6-->4
+ 2   2   8  
+Custo Total: 12
+7-->13-->14-->3-->2-->4
+ 5   7   1   3   3  
+Custo Total: 19
+
+
+Teste 113
+Origem: 	[7]
+Destino:	[5]
+7-->5
+ 3  
+Custo Total: 3
+7-->8-->6-->5
+ 2   2   3  
+Custo Total: 7
+7-->13-->18-->9-->8-->6-->5
+ 5   1   2   3   2   3  
+Custo Total: 16
+
+
+Teste 114
+Origem: 	[7]
+Destino:	[6]
+7-->8-->6
+ 2   2  
+Custo Total: 4
+7-->5-->6
+ 3   3  
+Custo Total: 6
+7-->13-->18-->9-->8-->6
+ 5   1   2   3   2  
+Custo Total: 13
+
+
+Teste 115
+Origem: 	[7]
+Destino:	[7]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 116
+Origem: 	[7]
+Destino:	[8]
+7-->8
+ 2  
+Custo Total: 2
+7-->5-->6-->8
+ 3   3   2  
+Custo Total: 8
+7-->13-->18-->9-->8
+ 5   1   2   3  
+Custo Total: 11
+
+
+Teste 117
+Origem: 	[7]
+Destino:	[9]
+7-->8-->9
+ 2   3  
+Custo Total: 5
+7-->13-->18-->9
+ 5   1   2  
+Custo Total: 8
+7-->5-->6-->8-->9
+ 3   3   2   3  
+Custo Total: 11
+
+
+Teste 118
+Origem: 	[7]
+Destino:	[10]
+7-->8-->9-->10
+ 2   3   2  
+Custo Total: 7
+7-->13-->18-->9-->10
+ 5   1   2   2  
+Custo Total: 10
+7-->5-->6-->8-->9-->10
+ 3   3   2   3   2  
+Custo Total: 13
+
+
+Teste 119
+Origem: 	[7]
+Destino:	[11]
+7-->8-->6-->11
+ 2   2   1  
+Custo Total: 5
+7-->8-->9-->10-->12-->11
+ 2   3   2   7   4  
+Custo Total: 18
+7-->13-->18-->9-->10-->12-->11
+ 5   1   2   2   7   4  
+Custo Total: 21
+
+
+Teste 120
+Origem: 	[7]
+Destino:	[12]
+7-->8-->6-->11-->12
+ 2   2   1   4  
+Custo Total: 9
+7-->8-->9-->10-->12
+ 2   3   2   7  
+Custo Total: 14
+7-->13-->18-->9-->10-->12
+ 5   1   2   2   7  
+Custo Total: 17
+
+
+Teste 121
+Origem: 	[7]
+Destino:	[13]
+7-->13
+ 5  
+Custo Total: 5
+7-->5-->3-->14-->13
+ 3   2   1   7  
+Custo Total: 13
+Nao existe o caminho: 3
+
+
+Teste 122
+Origem: 	[7]
+Destino:	[14]
+7-->5-->3-->14
+ 3   2   1  
+Custo Total: 6
+7-->13-->14
+ 5   7  
+Custo Total: 12
+Nao existe o caminho: 3
+
+
+Teste 123
+Origem: 	[7]
+Destino:	[15]
+7-->5-->3-->14-->15
+ 3   2   1   2  
+Custo Total: 8
+7-->13-->14-->15
+ 5   7   2  
+Custo Total: 14
+7-->13-->18-->17-->16-->15
+ 5   1   4   9   5  
+Custo Total: 24
+
+
+Teste 124
+Origem: 	[7]
+Destino:	[16]
+7-->5-->3-->14-->15-->16
+ 3   2   1   2   5  
+Custo Total: 13
+7-->13-->18-->17-->16
+ 5   1   4   9  
+Custo Total: 19
+7-->13-->14-->15-->16
+ 5   7   2   5  
+Custo Total: 19
+
+
+Teste 125
+Origem: 	[7]
+Destino:	[17]
+7-->13-->18-->17
+ 5   1   4  
+Custo Total: 10
+7-->5-->3-->14-->15-->16-->17
+ 3   2   1   2   5   9  
+Custo Total: 22
+7-->13-->14-->15-->16-->17
+ 5   7   2   5   9  
+Custo Total: 28
+
+
+Teste 126
+Origem: 	[7]
+Destino:	[18]
+7-->13-->18
+ 5   1  
+Custo Total: 6
+7-->5-->3-->14-->15-->16-->17-->18
+ 3   2   1   2   5   9   4  
+Custo Total: 26
+7-->13-->14-->15-->16-->17-->18
+ 5   7   2   5   9   4  
+Custo Total: 32
+
+
+Teste 127
+Origem: 	[8]
+Destino:	[1]
+8-->7-->5-->3-->1
+ 2   3   2   2  
+Custo Total: 9
+8-->6-->5-->3-->1
+ 2   3   2   2  
+Custo Total: 9
+8-->9-->10-->12-->11-->6-->5-->3-->1
+ 3   2   7   4   1   3   2   2  
+Custo Total: 24
+
+
+Teste 128
+Origem: 	[8]
+Destino:	[2]
+8-->7-->5-->3-->2
+ 2   3   2   3  
+Custo Total: 10
+8-->6-->5-->3-->2
+ 2   3   2   3  
+Custo Total: 10
+8-->9-->10-->12-->11-->6-->5-->3-->2
+ 3   2   7   4   1   3   2   3  
+Custo Total: 25
+
+
+Teste 129
+Origem: 	[8]
+Destino:	[3]
+8-->7-->5-->3
+ 2   3   2  
+Custo Total: 7
+8-->6-->5-->3
+ 2   3   2  
+Custo Total: 7
+8-->9-->10-->12-->11-->6-->5-->3
+ 3   2   7   4   1   3   2  
+Custo Total: 22
+
+
+Teste 130
+Origem: 	[8]
+Destino:	[4]
+8-->6-->4
+ 2   8  
+Custo Total: 10
+8-->7-->5-->4
+ 2   3   5  
+Custo Total: 10
+8-->9-->10-->12-->11-->6-->4
+ 3   2   7   4   1   8  
+Custo Total: 25
+
+
+Teste 131
+Origem: 	[8]
+Destino:	[5]
+8-->7-->5
+ 2   3  
+Custo Total: 5
+8-->6-->5
+ 2   3  
+Custo Total: 5
+8-->9-->10-->12-->11-->6-->5
+ 3   2   7   4   1   3  
+Custo Total: 20
+
+
+Teste 132
+Origem: 	[8]
+Destino:	[6]
+8-->6
+ 2  
+Custo Total: 2
+8-->7-->5-->6
+ 2   3   3  
+Custo Total: 8
+8-->9-->10-->12-->11-->6
+ 3   2   7   4   1  
+Custo Total: 17
+
+
+Teste 133
+Origem: 	[8]
+Destino:	[7]
+8-->7
+ 2  
+Custo Total: 2
+8-->6-->5-->7
+ 2   3   3  
+Custo Total: 8
+8-->9-->10-->12-->11-->6-->5-->7
+ 3   2   7   4   1   3   3  
+Custo Total: 23
+
+
+Teste 134
+Origem: 	[8]
+Destino:	[8]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 135
+Origem: 	[8]
+Destino:	[9]
+8-->9
+ 3  
+Custo Total: 3
+8-->7-->13-->18-->9
+ 2   5   1   2  
+Custo Total: 10
+8-->6-->11-->12-->10-->9
+ 2   1   4   7   2  
+Custo Total: 16
+
+
+Teste 136
+Origem: 	[8]
+Destino:	[10]
+8-->9-->10
+ 3   2  
+Custo Total: 5
+8-->6-->11-->12-->10
+ 2   1   4   7  
+Custo Total: 14
+Nao existe o caminho: 3
+
+
+Teste 137
+Origem: 	[8]
+Destino:	[11]
+8-->6-->11
+ 2   1  
+Custo Total: 3
+8-->9-->10-->12-->11
+ 3   2   7   4  
+Custo Total: 16
+Nao existe o caminho: 3
+
+
+Teste 138
+Origem: 	[8]
+Destino:	[12]
+8-->6-->11-->12
+ 2   1   4  
+Custo Total: 7
+8-->9-->10-->12
+ 3   2   7  
+Custo Total: 12
+Nao existe o caminho: 3
+
+
+Teste 139
+Origem: 	[8]
+Destino:	[13]
+8-->7-->13
+ 2   5  
+Custo Total: 7
+8-->6-->5-->7-->13
+ 2   3   3   5  
+Custo Total: 13
+8-->9-->10-->12-->11-->6-->5-->7-->13
+ 3   2   7   4   1   3   3   5  
+Custo Total: 28
+
+
+Teste 140
+Origem: 	[8]
+Destino:	[14]
+8-->7-->5-->3-->14
+ 2   3   2   1  
+Custo Total: 8
+8-->7-->13-->14
+ 2   5   7  
+Custo Total: 14
+8-->6-->5-->7-->13-->14
+ 2   3   3   5   7  
+Custo Total: 20
+
+
+Teste 141
+Origem: 	[8]
+Destino:	[15]
+8-->7-->5-->3-->14-->15
+ 2   3   2   1   2  
+Custo Total: 10
+8-->7-->13-->14-->15
+ 2   5   7   2  
+Custo Total: 16
+8-->6-->5-->7-->13-->14-->15
+ 2   3   3   5   7   2  
+Custo Total: 22
+
+
+Teste 142
+Origem: 	[8]
+Destino:	[16]
+8-->7-->5-->3-->14-->15-->16
+ 2   3   2   1   2   5  
+Custo Total: 15
+8-->7-->13-->18-->17-->16
+ 2   5   1   4   9  
+Custo Total: 21
+8-->7-->13-->14-->15-->16
+ 2   5   7   2   5  
+Custo Total: 21
+
+
+Teste 143
+Origem: 	[8]
+Destino:	[17]
+8-->7-->13-->18-->17
+ 2   5   1   4  
+Custo Total: 12
+8-->7-->5-->3-->14-->15-->16-->17
+ 2   3   2   1   2   5   9  
+Custo Total: 24
+8-->7-->13-->14-->15-->16-->17
+ 2   5   7   2   5   9  
+Custo Total: 30
+
+
+Teste 144
+Origem: 	[8]
+Destino:	[18]
+8-->7-->13-->18
+ 2   5   1  
+Custo Total: 8
+8-->7-->5-->3-->14-->15-->16-->17-->18
+ 2   3   2   1   2   5   9   4  
+Custo Total: 28
+8-->7-->13-->14-->15-->16-->17-->18
+ 2   5   7   2   5   9   4  
+Custo Total: 34
+
+
+Teste 145
+Origem: 	[9]
+Destino:	[1]
+9-->8-->7-->5-->3-->1
+ 3   2   3   2   2  
+Custo Total: 12
+9-->8-->6-->5-->3-->1
+ 3   2   3   2   2  
+Custo Total: 12
+9-->10-->12-->11-->6-->5-->3-->1
+ 2   7   4   1   3   2   2  
+Custo Total: 21
+
+
+Teste 146
+Origem: 	[9]
+Destino:	[2]
+9-->8-->7-->5-->3-->2
+ 3   2   3   2   3  
+Custo Total: 13
+9-->8-->6-->5-->3-->2
+ 3   2   3   2   3  
+Custo Total: 13
+9-->10-->12-->11-->6-->5-->3-->2
+ 2   7   4   1   3   2   3  
+Custo Total: 22
+
+
+Teste 147
+Origem: 	[9]
+Destino:	[3]
+9-->8-->7-->5-->3
+ 3   2   3   2  
+Custo Total: 10
+9-->8-->6-->5-->3
+ 3   2   3   2  
+Custo Total: 10
+9-->10-->12-->11-->6-->5-->3
+ 2   7   4   1   3   2  
+Custo Total: 19
+
+
+Teste 148
+Origem: 	[9]
+Destino:	[4]
+9-->8-->6-->4
+ 3   2   8  
+Custo Total: 13
+9-->8-->7-->5-->4
+ 3   2   3   5  
+Custo Total: 13
+9-->10-->12-->11-->6-->4
+ 2   7   4   1   8  
+Custo Total: 22
+
+
+Teste 149
+Origem: 	[9]
+Destino:	[5]
+9-->8-->7-->5
+ 3   2   3  
+Custo Total: 8
+9-->8-->6-->5
+ 3   2   3  
+Custo Total: 8
+9-->10-->12-->11-->6-->5
+ 2   7   4   1   3  
+Custo Total: 17
+
+
+Teste 150
+Origem: 	[9]
+Destino:	[6]
+9-->8-->6
+ 3   2  
+Custo Total: 5
+9-->8-->7-->5-->6
+ 3   2   3   3  
+Custo Total: 11
+9-->10-->12-->11-->6
+ 2   7   4   1  
+Custo Total: 14
+
+
+Teste 151
+Origem: 	[9]
+Destino:	[7]
+9-->8-->7
+ 3   2  
+Custo Total: 5
+9-->8-->6-->5-->7
+ 3   2   3   3  
+Custo Total: 11
+9-->10-->12-->11-->6-->5-->7
+ 2   7   4   1   3   3  
+Custo Total: 20
+
+
+Teste 152
+Origem: 	[9]
+Destino:	[8]
+9-->8
+ 3  
+Custo Total: 3
+9-->10-->12-->11-->6-->8
+ 2   7   4   1   2  
+Custo Total: 16
+Nao existe o caminho: 3
+
+
+Teste 153
+Origem: 	[9]
+Destino:	[9]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 154
+Origem: 	[9]
+Destino:	[10]
+9-->10
+ 2  
+Custo Total: 2
+9-->8-->6-->11-->12-->10
+ 3   2   1   4   7  
+Custo Total: 17
+Nao existe o caminho: 3
+
+
+Teste 155
+Origem: 	[9]
+Destino:	[11]
+9-->8-->6-->11
+ 3   2   1  
+Custo Total: 6
+9-->10-->12-->11
+ 2   7   4  
+Custo Total: 13
+Nao existe o caminho: 3
+
+
+Teste 156
+Origem: 	[9]
+Destino:	[12]
+9-->10-->12
+ 2   7  
+Custo Total: 9
+9-->8-->6-->11-->12
+ 3   2   1   4  
+Custo Total: 10
+Nao existe o caminho: 3
+
+
+Teste 157
+Origem: 	[9]
+Destino:	[13]
+9-->8-->7-->13
+ 3   2   5  
+Custo Total: 10
+9-->8-->6-->5-->7-->13
+ 3   2   3   3   5  
+Custo Total: 16
+9-->10-->12-->11-->6-->5-->7-->13
+ 2   7   4   1   3   3   5  
+Custo Total: 25
+
+
+Teste 158
+Origem: 	[9]
+Destino:	[14]
+9-->8-->7-->5-->3-->14
+ 3   2   3   2   1  
+Custo Total: 11
+9-->8-->7-->13-->14
+ 3   2   5   7  
+Custo Total: 17
+9-->8-->6-->5-->7-->13-->14
+ 3   2   3   3   5   7  
+Custo Total: 23
+
+
+Teste 159
+Origem: 	[9]
+Destino:	[15]
+9-->8-->7-->5-->3-->14-->15
+ 3   2   3   2   1   2  
+Custo Total: 13
+9-->8-->7-->13-->14-->15
+ 3   2   5   7   2  
+Custo Total: 19
+9-->8-->6-->5-->7-->13-->14-->15
+ 3   2   3   3   5   7   2  
+Custo Total: 25
+
+
+Teste 160
+Origem: 	[9]
+Destino:	[16]
+9-->8-->7-->5-->3-->14-->15-->16
+ 3   2   3   2   1   2   5  
+Custo Total: 18
+9-->8-->7-->13-->18-->17-->16
+ 3   2   5   1   4   9  
+Custo Total: 24
+9-->8-->7-->13-->14-->15-->16
+ 3   2   5   7   2   5  
+Custo Total: 24
+
+
+Teste 161
+Origem: 	[9]
+Destino:	[17]
+9-->8-->7-->13-->18-->17
+ 3   2   5   1   4  
+Custo Total: 15
+9-->8-->7-->5-->3-->14-->15-->16-->17
+ 3   2   3   2   1   2   5   9  
+Custo Total: 27
+9-->8-->7-->13-->14-->15-->16-->17
+ 3   2   5   7   2   5   9  
+Custo Total: 33
+
+
+Teste 162
+Origem: 	[9]
+Destino:	[18]
+9-->8-->7-->13-->18
+ 3   2   5   1  
+Custo Total: 11
+9-->8-->7-->5-->3-->14-->15-->16-->17-->18
+ 3   2   3   2   1   2   5   9   4  
+Custo Total: 31
+9-->8-->7-->13-->14-->15-->16-->17-->18
+ 3   2   5   7   2   5   9   4  
+Custo Total: 37
+
+
+Teste 163
+Origem: 	[10]
+Destino:	[1]
+10-->9-->8-->7-->5-->3-->1
+ 2   3   2   3   2   2  
+Custo Total: 14
+10-->12-->11-->6-->5-->3-->1
+ 7   4   1   3   2   2  
+Custo Total: 19
+Nao existe o caminho: 3
+
+
+Teste 164
+Origem: 	[10]
+Destino:	[2]
+10-->9-->8-->7-->5-->3-->2
+ 2   3   2   3   2   3  
+Custo Total: 15
+10-->12-->11-->6-->5-->3-->2
+ 7   4   1   3   2   3  
+Custo Total: 20
+Nao existe o caminho: 3
+
+
+Teste 165
+Origem: 	[10]
+Destino:	[3]
+10-->9-->8-->7-->5-->3
+ 2   3   2   3   2  
+Custo Total: 12
+10-->12-->11-->6-->5-->3
+ 7   4   1   3   2  
+Custo Total: 17
+Nao existe o caminho: 3
+
+
+Teste 166
+Origem: 	[10]
+Destino:	[4]
+10-->9-->8-->6-->4
+ 2   3   2   8  
+Custo Total: 15
+10-->12-->11-->6-->4
+ 7   4   1   8  
+Custo Total: 20
+Nao existe o caminho: 3
+
+
+Teste 167
+Origem: 	[10]
+Destino:	[5]
+10-->9-->8-->7-->5
+ 2   3   2   3  
+Custo Total: 10
+10-->12-->11-->6-->5
+ 7   4   1   3  
+Custo Total: 15
+Nao existe o caminho: 3
+
+
+Teste 168
+Origem: 	[10]
+Destino:	[6]
+10-->9-->8-->6
+ 2   3   2  
+Custo Total: 7
+10-->12-->11-->6
+ 7   4   1  
+Custo Total: 12
+Nao existe o caminho: 3
+
+
+Teste 169
+Origem: 	[10]
+Destino:	[7]
+10-->9-->8-->7
+ 2   3   2  
+Custo Total: 7
+10-->12-->11-->6-->8-->7
+ 7   4   1   2   2  
+Custo Total: 16
+Nao existe o caminho: 3
+
+
+Teste 170
+Origem: 	[10]
+Destino:	[8]
+10-->9-->8
+ 2   3  
+Custo Total: 5
+10-->12-->11-->6-->8
+ 7   4   1   2  
+Custo Total: 14
+Nao existe o caminho: 3
+
+
+Teste 171
+Origem: 	[10]
+Destino:	[9]
+10-->9
+ 2  
+Custo Total: 2
+10-->12-->11-->6-->8-->9
+ 7   4   1   2   3  
+Custo Total: 17
+Nao existe o caminho: 3
+
+
+Teste 172
+Origem: 	[10]
+Destino:	[10]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 173
+Origem: 	[10]
+Destino:	[11]
+10-->9-->8-->6-->11
+ 2   3   2   1  
+Custo Total: 8
+10-->12-->11
+ 7   4  
+Custo Total: 11
+Nao existe o caminho: 3
+
+
+Teste 174
+Origem: 	[10]
+Destino:	[12]
+10-->12
+ 7  
+Custo Total: 7
+10-->9-->8-->6-->11-->12
+ 2   3   2   1   4  
+Custo Total: 12
+Nao existe o caminho: 3
+
+
+Teste 175
+Origem: 	[10]
+Destino:	[13]
+10-->9-->8-->7-->13
+ 2   3   2   5  
+Custo Total: 12
+10-->12-->11-->6-->8-->7-->13
+ 7   4   1   2   2   5  
+Custo Total: 21
+Nao existe o caminho: 3
+
+
+Teste 176
+Origem: 	[10]
+Destino:	[14]
+10-->9-->8-->7-->5-->3-->14
+ 2   3   2   3   2   1  
+Custo Total: 13
+10-->9-->8-->7-->13-->14
+ 2   3   2   5   7  
+Custo Total: 19
+10-->12-->11-->6-->8-->7-->13-->14
+ 7   4   1   2   2   5   7  
+Custo Total: 28
+
+
+Teste 177
+Origem: 	[10]
+Destino:	[15]
+10-->9-->8-->7-->5-->3-->14-->15
+ 2   3   2   3   2   1   2  
+Custo Total: 15
+10-->9-->8-->7-->13-->14-->15
+ 2   3   2   5   7   2  
+Custo Total: 21
+10-->12-->11-->6-->8-->7-->13-->14-->15
+ 7   4   1   2   2   5   7   2  
+Custo Total: 30
+
+
+Teste 178
+Origem: 	[10]
+Destino:	[16]
+10-->9-->8-->7-->5-->3-->14-->15-->16
+ 2   3   2   3   2   1   2   5  
+Custo Total: 20
+10-->9-->8-->7-->13-->18-->17-->16
+ 2   3   2   5   1   4   9  
+Custo Total: 26
+10-->9-->8-->7-->13-->14-->15-->16
+ 2   3   2   5   7   2   5  
+Custo Total: 26
+
+
+Teste 179
+Origem: 	[10]
+Destino:	[17]
+10-->9-->8-->7-->13-->18-->17
+ 2   3   2   5   1   4  
+Custo Total: 17
+10-->9-->8-->7-->5-->3-->14-->15-->16-->17
+ 2   3   2   3   2   1   2   5   9  
+Custo Total: 29
+10-->9-->8-->7-->13-->14-->15-->16-->17
+ 2   3   2   5   7   2   5   9  
+Custo Total: 35
+
+
+Teste 180
+Origem: 	[10]
+Destino:	[18]
+10-->9-->8-->7-->13-->18
+ 2   3   2   5   1  
+Custo Total: 13
+10-->9-->8-->7-->5-->3-->14-->15-->16-->17-->18
+ 2   3   2   3   2   1   2   5   9   4  
+Custo Total: 33
+10-->9-->8-->7-->13-->14-->15-->16-->17-->18
+ 2   3   2   5   7   2   5   9   4  
+Custo Total: 39
+
+
+Teste 181
+Origem: 	[11]
+Destino:	[1]
+11-->6-->5-->3-->1
+ 1   3   2   2  
+Custo Total: 8
+11-->12-->10-->9-->8-->7-->5-->3-->1
+ 4   7   2   3   2   3   2   2  
+Custo Total: 25
+Nao existe o caminho: 3
+
+
+Teste 182
+Origem: 	[11]
+Destino:	[2]
+11-->6-->5-->3-->2
+ 1   3   2   3  
+Custo Total: 9
+11-->12-->10-->9-->8-->7-->5-->3-->2
+ 4   7   2   3   2   3   2   3  
+Custo Total: 26
+Nao existe o caminho: 3
+
+
+Teste 183
+Origem: 	[11]
+Destino:	[3]
+11-->6-->5-->3
+ 1   3   2  
+Custo Total: 6
+11-->12-->10-->9-->8-->7-->5-->3
+ 4   7   2   3   2   3   2  
+Custo Total: 23
+Nao existe o caminho: 3
+
+
+Teste 184
+Origem: 	[11]
+Destino:	[4]
+11-->6-->4
+ 1   8  
+Custo Total: 9
+11-->12-->10-->9-->8-->6-->4
+ 4   7   2   3   2   8  
+Custo Total: 26
+Nao existe o caminho: 3
+
+
+Teste 185
+Origem: 	[11]
+Destino:	[5]
+11-->6-->5
+ 1   3  
+Custo Total: 4
+11-->12-->10-->9-->8-->7-->5
+ 4   7   2   3   2   3  
+Custo Total: 21
+Nao existe o caminho: 3
+
+
+Teste 186
+Origem: 	[11]
+Destino:	[6]
+11-->6
+ 1  
+Custo Total: 1
+11-->12-->10-->9-->8-->6
+ 4   7   2   3   2  
+Custo Total: 18
+Nao existe o caminho: 3
+
+
+Teste 187
+Origem: 	[11]
+Destino:	[7]
+11-->6-->8-->7
+ 1   2   2  
+Custo Total: 5
+11-->12-->10-->9-->8-->7
+ 4   7   2   3   2  
+Custo Total: 18
+Nao existe o caminho: 3
+
+
+Teste 188
+Origem: 	[11]
+Destino:	[8]
+11-->6-->8
+ 1   2  
+Custo Total: 3
+11-->12-->10-->9-->8
+ 4   7   2   3  
+Custo Total: 16
+Nao existe o caminho: 3
+
+
+Teste 189
+Origem: 	[11]
+Destino:	[9]
+11-->6-->8-->9
+ 1   2   3  
+Custo Total: 6
+11-->12-->10-->9
+ 4   7   2  
+Custo Total: 13
+Nao existe o caminho: 3
+
+
+Teste 190
+Origem: 	[11]
+Destino:	[10]
+11-->6-->8-->9-->10
+ 1   2   3   2  
+Custo Total: 8
+11-->12-->10
+ 4   7  
+Custo Total: 11
+Nao existe o caminho: 3
+
+
+Teste 191
+Origem: 	[11]
+Destino:	[11]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 192
+Origem: 	[11]
+Destino:	[12]
+11-->12
+ 4  
+Custo Total: 4
+11-->6-->8-->9-->10-->12
+ 1   2   3   2   7  
+Custo Total: 15
+Nao existe o caminho: 3
+
+
+Teste 193
+Origem: 	[11]
+Destino:	[13]
+11-->6-->8-->7-->13
+ 1   2   2   5  
+Custo Total: 10
+11-->12-->10-->9-->8-->7-->13
+ 4   7   2   3   2   5  
+Custo Total: 23
+Nao existe o caminho: 3
+
+
+Teste 194
+Origem: 	[11]
+Destino:	[14]
+11-->6-->5-->3-->14
+ 1   3   2   1  
+Custo Total: 7
+11-->12-->10-->9-->8-->7-->5-->3-->14
+ 4   7   2   3   2   3   2   1  
+Custo Total: 24
+11-->12-->10-->9-->8-->7-->13-->14
+ 4   7   2   3   2   5   7  
+Custo Total: 30
+
+
+Teste 195
+Origem: 	[11]
+Destino:	[15]
+11-->6-->5-->3-->14-->15
+ 1   3   2   1   2  
+Custo Total: 9
+11-->12-->10-->9-->8-->7-->5-->3-->14-->15
+ 4   7   2   3   2   3   2   1   2  
+Custo Total: 26
+11-->12-->10-->9-->8-->7-->13-->14-->15
+ 4   7   2   3   2   5   7   2  
+Custo Total: 32
+
+
+Teste 196
+Origem: 	[11]
+Destino:	[16]
+11-->6-->5-->3-->14-->15-->16
+ 1   3   2   1   2   5  
+Custo Total: 14
+11-->12-->10-->9-->8-->7-->5-->3-->14-->15-->16
+ 4   7   2   3   2   3   2   1   2   5  
+Custo Total: 31
+11-->12-->10-->9-->8-->7-->13-->18-->17-->16
+ 4   7   2   3   2   5   1   4   9  
+Custo Total: 37
+
+
+Teste 197
+Origem: 	[11]
+Destino:	[17]
+11-->6-->8-->7-->13-->18-->17
+ 1   2   2   5   1   4  
+Custo Total: 15
+11-->12-->10-->9-->8-->7-->13-->18-->17
+ 4   7   2   3   2   5   1   4  
+Custo Total: 28
+11-->12-->10-->9-->8-->7-->5-->3-->14-->15-->16-->17
+ 4   7   2   3   2   3   2   1   2   5   9  
+Custo Total: 40
+
+
+Teste 198
+Origem: 	[11]
+Destino:	[18]
+11-->6-->8-->7-->13-->18
+ 1   2   2   5   1  
+Custo Total: 11
+11-->12-->10-->9-->8-->7-->13-->18
+ 4   7   2   3   2   5   1  
+Custo Total: 24
+11-->12-->10-->9-->8-->7-->5-->3-->14-->15-->16-->17-->18
+ 4   7   2   3   2   3   2   1   2   5   9   4  
+Custo Total: 44
+
+
+Teste 199
+Origem: 	[12]
+Destino:	[1]
+12-->11-->6-->5-->3-->1
+ 4   1   3   2   2  
+Custo Total: 12
+12-->10-->9-->8-->7-->5-->3-->1
+ 7   2   3   2   3   2   2  
+Custo Total: 21
+Nao existe o caminho: 3
+
+
+Teste 200
+Origem: 	[12]
+Destino:	[2]
+12-->11-->6-->5-->3-->2
+ 4   1   3   2   3  
+Custo Total: 13
+12-->10-->9-->8-->7-->5-->3-->2
+ 7   2   3   2   3   2   3  
+Custo Total: 22
+Nao existe o caminho: 3
+
+
+Teste 201
+Origem: 	[12]
+Destino:	[3]
+12-->11-->6-->5-->3
+ 4   1   3   2  
+Custo Total: 10
+12-->10-->9-->8-->7-->5-->3
+ 7   2   3   2   3   2  
+Custo Total: 19
+Nao existe o caminho: 3
+
+
+Teste 202
+Origem: 	[12]
+Destino:	[4]
+12-->11-->6-->4
+ 4   1   8  
+Custo Total: 13
+12-->10-->9-->8-->6-->4
+ 7   2   3   2   8  
+Custo Total: 22
+Nao existe o caminho: 3
+
+
+Teste 203
+Origem: 	[12]
+Destino:	[5]
+12-->11-->6-->5
+ 4   1   3  
+Custo Total: 8
+12-->10-->9-->8-->7-->5
+ 7   2   3   2   3  
+Custo Total: 17
+Nao existe o caminho: 3
+
+
+Teste 204
+Origem: 	[12]
+Destino:	[6]
+12-->11-->6
+ 4   1  
+Custo Total: 5
+12-->10-->9-->8-->6
+ 7   2   3   2  
+Custo Total: 14
+Nao existe o caminho: 3
+
+
+Teste 205
+Origem: 	[12]
+Destino:	[7]
+12-->11-->6-->8-->7
+ 4   1   2   2  
+Custo Total: 9
+12-->10-->9-->8-->7
+ 7   2   3   2  
+Custo Total: 14
+Nao existe o caminho: 3
+
+
+Teste 206
+Origem: 	[12]
+Destino:	[8]
+12-->11-->6-->8
+ 4   1   2  
+Custo Total: 7
+12-->10-->9-->8
+ 7   2   3  
+Custo Total: 12
+Nao existe o caminho: 3
+
+
+Teste 207
+Origem: 	[12]
+Destino:	[9]
+12-->10-->9
+ 7   2  
+Custo Total: 9
+12-->11-->6-->8-->9
+ 4   1   2   3  
+Custo Total: 10
+Nao existe o caminho: 3
+
+
+Teste 208
+Origem: 	[12]
+Destino:	[10]
+12-->10
+ 7  
+Custo Total: 7
+12-->11-->6-->8-->9-->10
+ 4   1   2   3   2  
+Custo Total: 12
+Nao existe o caminho: 3
+
+
+Teste 209
+Origem: 	[12]
+Destino:	[11]
+12-->11
+ 4  
+Custo Total: 4
+12-->10-->9-->8-->6-->11
+ 7   2   3   2   1  
+Custo Total: 15
+Nao existe o caminho: 3
+
+
+Teste 210
+Origem: 	[12]
+Destino:	[12]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 211
+Origem: 	[12]
+Destino:	[13]
+12-->11-->6-->8-->7-->13
+ 4   1   2   2   5  
+Custo Total: 14
+12-->10-->9-->8-->7-->13
+ 7   2   3   2   5  
+Custo Total: 19
+Nao existe o caminho: 3
+
+
+Teste 212
+Origem: 	[12]
+Destino:	[14]
+12-->11-->6-->5-->3-->14
+ 4   1   3   2   1  
+Custo Total: 11
+12-->10-->9-->8-->7-->5-->3-->14
+ 7   2   3   2   3   2   1  
+Custo Total: 20
+12-->10-->9-->8-->7-->13-->14
+ 7   2   3   2   5   7  
+Custo Total: 26
+
+
+Teste 213
+Origem: 	[12]
+Destino:	[15]
+12-->11-->6-->5-->3-->14-->15
+ 4   1   3   2   1   2  
+Custo Total: 13
+12-->10-->9-->8-->7-->5-->3-->14-->15
+ 7   2   3   2   3   2   1   2  
+Custo Total: 22
+12-->10-->9-->8-->7-->13-->14-->15
+ 7   2   3   2   5   7   2  
+Custo Total: 28
+
+
+Teste 214
+Origem: 	[12]
+Destino:	[16]
+12-->11-->6-->5-->3-->14-->15-->16
+ 4   1   3   2   1   2   5  
+Custo Total: 18
+12-->10-->9-->8-->7-->5-->3-->14-->15-->16
+ 7   2   3   2   3   2   1   2   5  
+Custo Total: 27
+12-->10-->9-->8-->7-->13-->18-->17-->16
+ 7   2   3   2   5   1   4   9  
+Custo Total: 33
+
+
+Teste 215
+Origem: 	[12]
+Destino:	[17]
+12-->11-->6-->8-->7-->13-->18-->17
+ 4   1   2   2   5   1   4  
+Custo Total: 19
+12-->10-->9-->8-->7-->13-->18-->17
+ 7   2   3   2   5   1   4  
+Custo Total: 24
+12-->10-->9-->8-->7-->5-->3-->14-->15-->16-->17
+ 7   2   3   2   3   2   1   2   5   9  
+Custo Total: 36
+
+
+Teste 216
+Origem: 	[12]
+Destino:	[18]
+12-->11-->6-->8-->7-->13-->18
+ 4   1   2   2   5   1  
+Custo Total: 15
+12-->10-->9-->8-->7-->13-->18
+ 7   2   3   2   5   1  
+Custo Total: 20
+12-->10-->9-->8-->7-->5-->3-->14-->15-->16-->17-->18
+ 7   2   3   2   3   2   1   2   5   9   4  
+Custo Total: 40
+
+
+Teste 217
+Origem: 	[13]
+Destino:	[1]
+13-->14-->3-->1
+ 7   1   2  
+Custo Total: 10
+13-->7-->5-->3-->1
+ 5   3   2   2  
+Custo Total: 12
+13-->7-->5-->4-->2-->1
+ 5   3   5   3   1  
+Custo Total: 17
+
+
+Teste 218
+Origem: 	[13]
+Destino:	[2]
+13-->14-->3-->2
+ 7   1   3  
+Custo Total: 11
+13-->7-->5-->3-->2
+ 5   3   2   3  
+Custo Total: 13
+13-->7-->5-->4-->2
+ 5   3   5   3  
+Custo Total: 16
+
+
+Teste 219
+Origem: 	[13]
+Destino:	[3]
+13-->14-->3
+ 7   1  
+Custo Total: 8
+13-->7-->5-->3
+ 5   3   2  
+Custo Total: 10
+13-->7-->5-->4-->2-->3
+ 5   3   5   3   3  
+Custo Total: 19
+
+
+Teste 220
+Origem: 	[13]
+Destino:	[4]
+13-->7-->5-->4
+ 5   3   5  
+Custo Total: 13
+13-->14-->3-->2-->4
+ 7   1   3   3  
+Custo Total: 14
+13-->18-->9-->8-->6-->4
+ 1   2   3   2   8  
+Custo Total: 16
+
+
+Teste 221
+Origem: 	[13]
+Destino:	[5]
+13-->7-->5
+ 5   3  
+Custo Total: 8
+13-->18-->9-->8-->6-->5
+ 1   2   3   2   3  
+Custo Total: 11
+13-->7-->8-->6-->5
+ 5   2   2   3  
+Custo Total: 12
+
+
+Teste 222
+Origem: 	[13]
+Destino:	[6]
+13-->18-->9-->8-->6
+ 1   2   3   2  
+Custo Total: 8
+13-->7-->8-->6
+ 5   2   2  
+Custo Total: 9
+13-->7-->5-->6
+ 5   3   3  
+Custo Total: 11
+
+
+Teste 223
+Origem: 	[13]
+Destino:	[7]
+13-->7
+ 5  
+Custo Total: 5
+13-->18-->9-->8-->7
+ 1   2   3   2  
+Custo Total: 8
+13-->14-->3-->2-->4-->5-->7
+ 7   1   3   3   5   3  
+Custo Total: 22
+
+
+Teste 224
+Origem: 	[13]
+Destino:	[8]
+13-->18-->9-->8
+ 1   2   3  
+Custo Total: 6
+13-->7-->8
+ 5   2  
+Custo Total: 7
+13-->7-->5-->6-->8
+ 5   3   3   2  
+Custo Total: 13
+
+
+Teste 225
+Origem: 	[13]
+Destino:	[9]
+13-->18-->9
+ 1   2  
+Custo Total: 3
+13-->7-->8-->9
+ 5   2   3  
+Custo Total: 10
+13-->7-->5-->6-->8-->9
+ 5   3   3   2   3  
+Custo Total: 16
+
+
+Teste 226
+Origem: 	[13]
+Destino:	[10]
+13-->18-->9-->10
+ 1   2   2  
+Custo Total: 5
+13-->7-->8-->9-->10
+ 5   2   3   2  
+Custo Total: 12
+13-->7-->5-->6-->8-->9-->10
+ 5   3   3   2   3   2  
+Custo Total: 18
+
+
+Teste 227
+Origem: 	[13]
+Destino:	[11]
+13-->18-->9-->8-->6-->11
+ 1   2   3   2   1  
+Custo Total: 9
+13-->7-->8-->6-->11
+ 5   2   2   1  
+Custo Total: 10
+13-->7-->8-->9-->10-->12-->11
+ 5   2   3   2   7   4  
+Custo Total: 23
+
+
+Teste 228
+Origem: 	[13]
+Destino:	[12]
+13-->18-->9-->10-->12
+ 1   2   2   7  
+Custo Total: 12
+13-->7-->8-->6-->11-->12
+ 5   2   2   1   4  
+Custo Total: 14
+13-->7-->8-->9-->10-->12
+ 5   2   3   2   7  
+Custo Total: 19
+
+
+Teste 229
+Origem: 	[13]
+Destino:	[13]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 230
+Origem: 	[13]
+Destino:	[14]
+13-->14
+ 7  
+Custo Total: 7
+13-->7-->5-->3-->14
+ 5   3   2   1  
+Custo Total: 11
+13-->18-->17-->16-->15-->14
+ 1   4   9   5   2  
+Custo Total: 21
+
+
+Teste 231
+Origem: 	[13]
+Destino:	[15]
+13-->14-->15
+ 7   2  
+Custo Total: 9
+13-->18-->17-->16-->15
+ 1   4   9   5  
+Custo Total: 19
+Nao existe o caminho: 3
+
+
+Teste 232
+Origem: 	[13]
+Destino:	[16]
+13-->18-->17-->16
+ 1   4   9  
+Custo Total: 14
+13-->14-->15-->16
+ 7   2   5  
+Custo Total: 14
+Nao existe o caminho: 3
+
+
+Teste 233
+Origem: 	[13]
+Destino:	[17]
+13-->18-->17
+ 1   4  
+Custo Total: 5
+13-->14-->15-->16-->17
+ 7   2   5   9  
+Custo Total: 23
+Nao existe o caminho: 3
+
+
+Teste 234
+Origem: 	[13]
+Destino:	[18]
+13-->18
+ 1  
+Custo Total: 1
+13-->14-->15-->16-->17-->18
+ 7   2   5   9   4  
+Custo Total: 27
+Nao existe o caminho: 3
+
+
+Teste 235
+Origem: 	[14]
+Destino:	[1]
+14-->3-->1
+ 1   2  
+Custo Total: 3
+14-->13-->7-->5-->3-->1
+ 7   5   3   2   2  
+Custo Total: 19
+14-->13-->7-->5-->4-->2-->1
+ 7   5   3   5   3   1  
+Custo Total: 24
+
+
+Teste 236
+Origem: 	[14]
+Destino:	[2]
+14-->3-->2
+ 1   3  
+Custo Total: 4
+14-->13-->7-->5-->3-->2
+ 7   5   3   2   3  
+Custo Total: 20
+14-->13-->7-->5-->4-->2
+ 7   5   3   5   3  
+Custo Total: 23
+
+
+Teste 237
+Origem: 	[14]
+Destino:	[3]
+14-->3
+ 1  
+Custo Total: 1
+14-->13-->7-->5-->3
+ 7   5   3   2  
+Custo Total: 17
+14-->13-->7-->5-->4-->2-->3
+ 7   5   3   5   3   3  
+Custo Total: 26
+
+
+Teste 238
+Origem: 	[14]
+Destino:	[4]
+14-->3-->2-->4
+ 1   3   3  
+Custo Total: 7
+14-->13-->7-->5-->4
+ 7   5   3   5  
+Custo Total: 20
+14-->13-->18-->9-->8-->6-->4
+ 7   1   2   3   2   8  
+Custo Total: 23
+
+
+Teste 239
+Origem: 	[14]
+Destino:	[5]
+14-->3-->2-->4-->5
+ 1   3   3   5  
+Custo Total: 12
+14-->13-->7-->5
+ 7   5   3  
+Custo Total: 15
+14-->13-->18-->9-->8-->6-->5
+ 7   1   2   3   2   3  
+Custo Total: 18
+
+
+Teste 240
+Origem: 	[14]
+Destino:	[6]
+14-->3-->2-->4-->6
+ 1   3   3   8  
+Custo Total: 15
+14-->13-->18-->9-->8-->6
+ 7   1   2   3   2  
+Custo Total: 15
+14-->13-->7-->8-->6
+ 7   5   2   2  
+Custo Total: 16
+
+
+Teste 241
+Origem: 	[14]
+Destino:	[7]
+14-->13-->7
+ 7   5  
+Custo Total: 12
+14-->3-->2-->4-->5-->7
+ 1   3   3   5   3  
+Custo Total: 15
+14-->13-->18-->9-->8-->7
+ 7   1   2   3   2  
+Custo Total: 15
+
+
+Teste 242
+Origem: 	[14]
+Destino:	[8]
+14-->13-->18-->9-->8
+ 7   1   2   3  
+Custo Total: 13
+14-->13-->7-->8
+ 7   5   2  
+Custo Total: 14
+14-->3-->2-->4-->6-->8
+ 1   3   3   8   2  
+Custo Total: 17
+
+
+Teste 243
+Origem: 	[14]
+Destino:	[9]
+14-->13-->18-->9
+ 7   1   2  
+Custo Total: 10
+14-->13-->7-->8-->9
+ 7   5   2   3  
+Custo Total: 17
+14-->3-->2-->4-->6-->8-->9
+ 1   3   3   8   2   3  
+Custo Total: 20
+
+
+Teste 244
+Origem: 	[14]
+Destino:	[10]
+14-->13-->18-->9-->10
+ 7   1   2   2  
+Custo Total: 12
+14-->13-->7-->8-->9-->10
+ 7   5   2   3   2  
+Custo Total: 19
+14-->3-->2-->4-->6-->8-->9-->10
+ 1   3   3   8   2   3   2  
+Custo Total: 22
+
+
+Teste 245
+Origem: 	[14]
+Destino:	[11]
+14-->3-->2-->4-->6-->11
+ 1   3   3   8   1  
+Custo Total: 16
+14-->13-->18-->9-->8-->6-->11
+ 7   1   2   3   2   1  
+Custo Total: 16
+14-->13-->7-->8-->6-->11
+ 7   5   2   2   1  
+Custo Total: 17
+
+
+Teste 246
+Origem: 	[14]
+Destino:	[12]
+14-->13-->18-->9-->10-->12
+ 7   1   2   2   7  
+Custo Total: 19
+14-->3-->2-->4-->6-->11-->12
+ 1   3   3   8   1   4  
+Custo Total: 20
+14-->13-->7-->8-->6-->11-->12
+ 7   5   2   2   1   4  
+Custo Total: 21
+
+
+Teste 247
+Origem: 	[14]
+Destino:	[13]
+14-->13
+ 7  
+Custo Total: 7
+14-->3-->2-->4-->5-->7-->13
+ 1   3   3   5   3   5  
+Custo Total: 20
+14-->15-->16-->17-->18-->13
+ 2   5   9   4   1  
+Custo Total: 21
+
+
+Teste 248
+Origem: 	[14]
+Destino:	[14]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 249
+Origem: 	[14]
+Destino:	[15]
+14-->15
+ 2  
+Custo Total: 2
+14-->13-->18-->17-->16-->15
+ 7   1   4   9   5  
+Custo Total: 26
+Nao existe o caminho: 3
+
+
+Teste 250
+Origem: 	[14]
+Destino:	[16]
+14-->15-->16
+ 2   5  
+Custo Total: 7
+14-->13-->18-->17-->16
+ 7   1   4   9  
+Custo Total: 21
+Nao existe o caminho: 3
+
+
+Teste 251
+Origem: 	[14]
+Destino:	[17]
+14-->13-->18-->17
+ 7   1   4  
+Custo Total: 12
+14-->15-->16-->17
+ 2   5   9  
+Custo Total: 16
+Nao existe o caminho: 3
+
+
+Teste 252
+Origem: 	[14]
+Destino:	[18]
+14-->13-->18
+ 7   1  
+Custo Total: 8
+14-->15-->16-->17-->18
+ 2   5   9   4  
+Custo Total: 20
+Nao existe o caminho: 3
+
+
+Teste 253
+Origem: 	[15]
+Destino:	[1]
+15-->14-->3-->1
+ 2   1   2  
+Custo Total: 5
+15-->14-->13-->7-->5-->3-->1
+ 2   7   5   3   2   2  
+Custo Total: 21
+15-->16-->17-->18-->13-->7-->5-->3-->1
+ 5   9   4   1   5   3   2   2  
+Custo Total: 31
+
+
+Teste 254
+Origem: 	[15]
+Destino:	[2]
+15-->14-->3-->2
+ 2   1   3  
+Custo Total: 6
+15-->14-->13-->7-->5-->3-->2
+ 2   7   5   3   2   3  
+Custo Total: 22
+15-->16-->17-->18-->13-->7-->5-->3-->2
+ 5   9   4   1   5   3   2   3  
+Custo Total: 32
+
+
+Teste 255
+Origem: 	[15]
+Destino:	[3]
+15-->14-->3
+ 2   1  
+Custo Total: 3
+15-->14-->13-->7-->5-->3
+ 2   7   5   3   2  
+Custo Total: 19
+15-->16-->17-->18-->13-->7-->5-->3
+ 5   9   4   1   5   3   2  
+Custo Total: 29
+
+
+Teste 256
+Origem: 	[15]
+Destino:	[4]
+15-->14-->3-->2-->4
+ 2   1   3   3  
+Custo Total: 9
+15-->14-->13-->7-->5-->4
+ 2   7   5   3   5  
+Custo Total: 22
+15-->16-->17-->18-->13-->7-->5-->4
+ 5   9   4   1   5   3   5  
+Custo Total: 32
+
+
+Teste 257
+Origem: 	[15]
+Destino:	[5]
+15-->14-->3-->2-->4-->5
+ 2   1   3   3   5  
+Custo Total: 14
+15-->14-->13-->7-->5
+ 2   7   5   3  
+Custo Total: 17
+15-->16-->17-->18-->13-->7-->5
+ 5   9   4   1   5   3  
+Custo Total: 27
+
+
+Teste 258
+Origem: 	[15]
+Destino:	[6]
+15-->14-->3-->2-->4-->6
+ 2   1   3   3   8  
+Custo Total: 17
+15-->14-->13-->18-->9-->8-->6
+ 2   7   1   2   3   2  
+Custo Total: 17
+15-->14-->13-->7-->8-->6
+ 2   7   5   2   2  
+Custo Total: 18
+
+
+Teste 259
+Origem: 	[15]
+Destino:	[7]
+15-->14-->13-->7
+ 2   7   5  
+Custo Total: 14
+15-->16-->17-->18-->13-->7
+ 5   9   4   1   5  
+Custo Total: 24
+15-->16-->17-->18-->9-->8-->7
+ 5   9   4   2   3   2  
+Custo Total: 25
+
+
+Teste 260
+Origem: 	[15]
+Destino:	[8]
+15-->14-->13-->18-->9-->8
+ 2   7   1   2   3  
+Custo Total: 15
+15-->14-->13-->7-->8
+ 2   7   5   2  
+Custo Total: 16
+15-->16-->17-->18-->9-->8
+ 5   9   4   2   3  
+Custo Total: 23
+
+
+Teste 261
+Origem: 	[15]
+Destino:	[9]
+15-->14-->13-->18-->9
+ 2   7   1   2  
+Custo Total: 12
+15-->14-->13-->7-->8-->9
+ 2   7   5   2   3  
+Custo Total: 19
+15-->16-->17-->18-->9
+ 5   9   4   2  
+Custo Total: 20
+
+
+Teste 262
+Origem: 	[15]
+Destino:	[10]
+15-->14-->13-->18-->9-->10
+ 2   7   1   2   2  
+Custo Total: 14
+15-->14-->13-->7-->8-->9-->10
+ 2   7   5   2   3   2  
+Custo Total: 21
+15-->16-->17-->18-->9-->10
+ 5   9   4   2   2  
+Custo Total: 22
+
+
+Teste 263
+Origem: 	[15]
+Destino:	[11]
+15-->14-->3-->2-->4-->6-->11
+ 2   1   3   3   8   1  
+Custo Total: 18
+15-->14-->13-->18-->9-->8-->6-->11
+ 2   7   1   2   3   2   1  
+Custo Total: 18
+15-->14-->13-->7-->8-->6-->11
+ 2   7   5   2   2   1  
+Custo Total: 19
+
+
+Teste 264
+Origem: 	[15]
+Destino:	[12]
+15-->14-->13-->18-->9-->10-->12
+ 2   7   1   2   2   7  
+Custo Total: 21
+15-->14-->3-->2-->4-->6-->11-->12
+ 2   1   3   3   8   1   4  
+Custo Total: 22
+15-->14-->13-->7-->8-->6-->11-->12
+ 2   7   5   2   2   1   4  
+Custo Total: 23
+
+
+Teste 265
+Origem: 	[15]
+Destino:	[13]
+15-->14-->13
+ 2   7  
+Custo Total: 9
+15-->16-->17-->18-->13
+ 5   9   4   1  
+Custo Total: 19
+15-->16-->17-->18-->9-->8-->7-->13
+ 5   9   4   2   3   2   5  
+Custo Total: 30
+
+
+Teste 266
+Origem: 	[15]
+Destino:	[14]
+15-->14
+ 2  
+Custo Total: 2
+15-->16-->17-->18-->13-->14
+ 5   9   4   1   7  
+Custo Total: 26
+15-->16-->17-->18-->9-->8-->7-->5-->3-->14
+ 5   9   4   2   3   2   3   2   1  
+Custo Total: 31
+
+
+Teste 267
+Origem: 	[15]
+Destino:	[15]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 268
+Origem: 	[15]
+Destino:	[16]
+15-->16
+ 5  
+Custo Total: 5
+15-->14-->13-->18-->17-->16
+ 2   7   1   4   9  
+Custo Total: 23
+Nao existe o caminho: 3
+
+
+Teste 269
+Origem: 	[15]
+Destino:	[17]
+15-->16-->17
+ 5   9  
+Custo Total: 14
+15-->14-->13-->18-->17
+ 2   7   1   4  
+Custo Total: 14
+Nao existe o caminho: 3
+
+
+Teste 270
+Origem: 	[15]
+Destino:	[18]
+15-->14-->13-->18
+ 2   7   1  
+Custo Total: 10
+15-->16-->17-->18
+ 5   9   4  
+Custo Total: 18
+Nao existe o caminho: 3
+
+
+Teste 271
+Origem: 	[16]
+Destino:	[1]
+16-->15-->14-->3-->1
+ 5   2   1   2  
+Custo Total: 10
+16-->15-->14-->13-->7-->5-->3-->1
+ 5   2   7   5   3   2   2  
+Custo Total: 26
+16-->17-->18-->13-->7-->5-->3-->1
+ 9   4   1   5   3   2   2  
+Custo Total: 26
+
+
+Teste 272
+Origem: 	[16]
+Destino:	[2]
+16-->15-->14-->3-->2
+ 5   2   1   3  
+Custo Total: 11
+16-->15-->14-->13-->7-->5-->3-->2
+ 5   2   7   5   3   2   3  
+Custo Total: 27
+16-->17-->18-->13-->7-->5-->3-->2
+ 9   4   1   5   3   2   3  
+Custo Total: 27
+
+
+Teste 273
+Origem: 	[16]
+Destino:	[3]
+16-->15-->14-->3
+ 5   2   1  
+Custo Total: 8
+16-->15-->14-->13-->7-->5-->3
+ 5   2   7   5   3   2  
+Custo Total: 24
+16-->17-->18-->13-->7-->5-->3
+ 9   4   1   5   3   2  
+Custo Total: 24
+
+
+Teste 274
+Origem: 	[16]
+Destino:	[4]
+16-->15-->14-->3-->2-->4
+ 5   2   1   3   3  
+Custo Total: 14
+16-->15-->14-->13-->7-->5-->4
+ 5   2   7   5   3   5  
+Custo Total: 27
+16-->17-->18-->13-->7-->5-->4
+ 9   4   1   5   3   5  
+Custo Total: 27
+
+
+Teste 275
+Origem: 	[16]
+Destino:	[5]
+16-->15-->14-->3-->2-->4-->5
+ 5   2   1   3   3   5  
+Custo Total: 19
+16-->15-->14-->13-->7-->5
+ 5   2   7   5   3  
+Custo Total: 22
+16-->17-->18-->13-->7-->5
+ 9   4   1   5   3  
+Custo Total: 22
+
+
+Teste 276
+Origem: 	[16]
+Destino:	[6]
+16-->17-->18-->9-->8-->6
+ 9   4   2   3   2  
+Custo Total: 20
+16-->15-->14-->3-->2-->4-->6
+ 5   2   1   3   3   8  
+Custo Total: 22
+16-->15-->14-->13-->7-->8-->6
+ 5   2   7   5   2   2  
+Custo Total: 23
+
+
+Teste 277
+Origem: 	[16]
+Destino:	[7]
+16-->15-->14-->13-->7
+ 5   2   7   5  
+Custo Total: 19
+16-->17-->18-->13-->7
+ 9   4   1   5  
+Custo Total: 19
+16-->17-->18-->9-->8-->7
+ 9   4   2   3   2  
+Custo Total: 20
+
+
+Teste 278
+Origem: 	[16]
+Destino:	[8]
+16-->17-->18-->9-->8
+ 9   4   2   3  
+Custo Total: 18
+16-->15-->14-->13-->7-->8
+ 5   2   7   5   2  
+Custo Total: 21
+16-->17-->18-->13-->7-->8
+ 9   4   1   5   2  
+Custo Total: 21
+
+
+Teste 279
+Origem: 	[16]
+Destino:	[9]
+16-->17-->18-->9
+ 9   4   2  
+Custo Total: 15
+16-->15-->14-->13-->7-->8-->9
+ 5   2   7   5   2   3  
+Custo Total: 24
+16-->17-->18-->13-->7-->8-->9
+ 9   4   1   5   2   3  
+Custo Total: 24
+
+
+Teste 280
+Origem: 	[16]
+Destino:	[10]
+16-->17-->18-->9-->10
+ 9   4   2   2  
+Custo Total: 17
+16-->15-->14-->13-->7-->8-->9-->10
+ 5   2   7   5   2   3   2  
+Custo Total: 26
+16-->17-->18-->13-->7-->8-->9-->10
+ 9   4   1   5   2   3   2  
+Custo Total: 26
+
+
+Teste 281
+Origem: 	[16]
+Destino:	[11]
+16-->17-->18-->9-->8-->6-->11
+ 9   4   2   3   2   1  
+Custo Total: 21
+16-->17-->18-->9-->10-->12-->11
+ 9   4   2   2   7   4  
+Custo Total: 28
+16-->15-->14-->13-->7-->8-->9-->10-->12-->11
+ 5   2   7   5   2   3   2   7   4  
+Custo Total: 37
+
+
+Teste 282
+Origem: 	[16]
+Destino:	[12]
+16-->17-->18-->9-->10-->12
+ 9   4   2   2   7  
+Custo Total: 24
+16-->15-->14-->3-->2-->4-->6-->11-->12
+ 5   2   1   3   3   8   1   4  
+Custo Total: 27
+16-->15-->14-->13-->7-->8-->6-->11-->12
+ 5   2   7   5   2   2   1   4  
+Custo Total: 28
+
+
+Teste 283
+Origem: 	[16]
+Destino:	[13]
+16-->15-->14-->13
+ 5   2   7  
+Custo Total: 14
+16-->17-->18-->13
+ 9   4   1  
+Custo Total: 14
+16-->17-->18-->9-->8-->7-->13
+ 9   4   2   3   2   5  
+Custo Total: 25
+
+
+Teste 284
+Origem: 	[16]
+Destino:	[14]
+16-->15-->14
+ 5   2  
+Custo Total: 7
+16-->17-->18-->13-->14
+ 9   4   1   7  
+Custo Total: 21
+16-->17-->18-->9-->8-->7-->5-->3-->14
+ 9   4   2   3   2   3   2   1  
+Custo Total: 26
+
+
+Teste 285
+Origem: 	[16]
+Destino:	[15]
+16-->15
+ 5  
+Custo Total: 5
+16-->17-->18-->13-->14-->15
+ 9   4   1   7   2  
+Custo Total: 23
+16-->17-->18-->9-->8-->7-->5-->3-->14-->15
+ 9   4   2   3   2   3   2   1   2  
+Custo Total: 28
+
+
+Teste 286
+Origem: 	[16]
+Destino:	[16]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 287
+Origem: 	[16]
+Destino:	[17]
+16-->17
+ 9  
+Custo Total: 9
+16-->15-->14-->13-->18-->17
+ 5   2   7   1   4  
+Custo Total: 19
+Nao existe o caminho: 3
+
+
+Teste 288
+Origem: 	[16]
+Destino:	[18]
+16-->17-->18
+ 9   4  
+Custo Total: 13
+16-->15-->14-->13-->18
+ 5   2   7   1  
+Custo Total: 15
+Nao existe o caminho: 3
+
+
+Teste 289
+Origem: 	[17]
+Destino:	[1]
+17-->18-->13-->14-->3-->1
+ 4   1   7   1   2  
+Custo Total: 15
+17-->18-->9-->8-->7-->5-->3-->1
+ 4   2   3   2   3   2   2  
+Custo Total: 18
+17-->16-->15-->14-->3-->1
+ 9   5   2   1   2  
+Custo Total: 19
+
+
+Teste 290
+Origem: 	[17]
+Destino:	[2]
+17-->18-->13-->14-->3-->2
+ 4   1   7   1   3  
+Custo Total: 16
+17-->18-->9-->8-->7-->5-->3-->2
+ 4   2   3   2   3   2   3  
+Custo Total: 19
+17-->16-->15-->14-->3-->2
+ 9   5   2   1   3  
+Custo Total: 20
+
+
+Teste 291
+Origem: 	[17]
+Destino:	[3]
+17-->18-->13-->14-->3
+ 4   1   7   1  
+Custo Total: 13
+17-->18-->9-->8-->7-->5-->3
+ 4   2   3   2   3   2  
+Custo Total: 16
+17-->16-->15-->14-->3
+ 9   5   2   1  
+Custo Total: 17
+
+
+Teste 292
+Origem: 	[17]
+Destino:	[4]
+17-->18-->13-->7-->5-->4
+ 4   1   5   3   5  
+Custo Total: 18
+17-->18-->9-->8-->6-->4
+ 4   2   3   2   8  
+Custo Total: 19
+17-->16-->15-->14-->3-->2-->4
+ 9   5   2   1   3   3  
+Custo Total: 23
+
+
+Teste 293
+Origem: 	[17]
+Destino:	[5]
+17-->18-->13-->7-->5
+ 4   1   5   3  
+Custo Total: 13
+17-->18-->9-->8-->7-->5
+ 4   2   3   2   3  
+Custo Total: 14
+17-->16-->15-->14-->3-->2-->4-->5
+ 9   5   2   1   3   3   5  
+Custo Total: 28
+
+
+Teste 294
+Origem: 	[17]
+Destino:	[6]
+17-->18-->9-->8-->6
+ 4   2   3   2  
+Custo Total: 11
+17-->18-->13-->7-->8-->6
+ 4   1   5   2   2  
+Custo Total: 14
+17-->16-->15-->14-->3-->2-->4-->6
+ 9   5   2   1   3   3   8  
+Custo Total: 31
+
+
+Teste 295
+Origem: 	[17]
+Destino:	[7]
+17-->18-->13-->7
+ 4   1   5  
+Custo Total: 10
+17-->18-->9-->8-->7
+ 4   2   3   2  
+Custo Total: 11
+17-->16-->15-->14-->13-->7
+ 9   5   2   7   5  
+Custo Total: 28
+
+
+Teste 296
+Origem: 	[17]
+Destino:	[8]
+17-->18-->9-->8
+ 4   2   3  
+Custo Total: 9
+17-->18-->13-->7-->8
+ 4   1   5   2  
+Custo Total: 12
+17-->16-->15-->14-->13-->7-->8
+ 9   5   2   7   5   2  
+Custo Total: 30
+
+
+Teste 297
+Origem: 	[17]
+Destino:	[9]
+17-->18-->9
+ 4   2  
+Custo Total: 6
+17-->18-->13-->7-->8-->9
+ 4   1   5   2   3  
+Custo Total: 15
+17-->16-->15-->14-->13-->7-->8-->9
+ 9   5   2   7   5   2   3  
+Custo Total: 33
+
+
+Teste 298
+Origem: 	[17]
+Destino:	[10]
+17-->18-->9-->10
+ 4   2   2  
+Custo Total: 8
+17-->18-->13-->7-->8-->9-->10
+ 4   1   5   2   3   2  
+Custo Total: 17
+17-->16-->15-->14-->13-->7-->8-->9-->10
+ 9   5   2   7   5   2   3   2  
+Custo Total: 35
+
+
+Teste 299
+Origem: 	[17]
+Destino:	[11]
+17-->18-->9-->8-->6-->11
+ 4   2   3   2   1  
+Custo Total: 12
+17-->18-->9-->10-->12-->11
+ 4   2   2   7   4  
+Custo Total: 19
+17-->18-->13-->7-->8-->9-->10-->12-->11
+ 4   1   5   2   3   2   7   4  
+Custo Total: 28
+
+
+Teste 300
+Origem: 	[17]
+Destino:	[12]
+17-->18-->9-->10-->12
+ 4   2   2   7  
+Custo Total: 15
+17-->18-->13-->7-->8-->6-->11-->12
+ 4   1   5   2   2   1   4  
+Custo Total: 19
+17-->16-->15-->14-->3-->2-->4-->6-->11-->12
+ 9   5   2   1   3   3   8   1   4  
+Custo Total: 36
+
+
+Teste 301
+Origem: 	[17]
+Destino:	[13]
+17-->18-->13
+ 4   1  
+Custo Total: 5
+17-->18-->9-->8-->7-->13
+ 4   2   3   2   5  
+Custo Total: 16
+17-->16-->15-->14-->13
+ 9   5   2   7  
+Custo Total: 23
+
+
+Teste 302
+Origem: 	[17]
+Destino:	[14]
+17-->18-->13-->14
+ 4   1   7  
+Custo Total: 12
+17-->16-->15-->14
+ 9   5   2  
+Custo Total: 16
+17-->18-->9-->8-->7-->5-->3-->14
+ 4   2   3   2   3   2   1  
+Custo Total: 17
+
+
+Teste 303
+Origem: 	[17]
+Destino:	[15]
+17-->16-->15
+ 9   5  
+Custo Total: 14
+17-->18-->13-->14-->15
+ 4   1   7   2  
+Custo Total: 14
+17-->18-->9-->8-->7-->5-->3-->14-->15
+ 4   2   3   2   3   2   1   2  
+Custo Total: 19
+
+
+Teste 304
+Origem: 	[17]
+Destino:	[16]
+17-->16
+ 9  
+Custo Total: 9
+17-->18-->13-->14-->15-->16
+ 4   1   7   2   5  
+Custo Total: 19
+17-->18-->9-->8-->7-->5-->3-->14-->15-->16
+ 4   2   3   2   3   2   1   2   5  
+Custo Total: 24
+
+
+Teste 305
+Origem: 	[17]
+Destino:	[17]
+O no de origem deve ser diferente do no de destino
+
+
+Teste 306
+Origem: 	[17]
+Destino:	[18]
+17-->18
+ 4  
+Custo Total: 4
+17-->16-->15-->14-->13-->18
+ 9   5   2   7   1  
+Custo Total: 24
+Nao existe o caminho: 3
+
+
+Teste 307
+Origem: 	[18]
+Destino:	[1]
+18-->13-->14-->3-->1
+ 1   7   1   2  
+Custo Total: 11
+18-->9-->8-->7-->5-->3-->1
+ 2   3   2   3   2   2  
+Custo Total: 14
+18-->17-->16-->15-->14-->3-->1
+ 4   9   5   2   1   2  
+Custo Total: 23
+
+
+Teste 308
+Origem: 	[18]
+Destino:	[2]
+18-->13-->14-->3-->2
+ 1   7   1   3  
+Custo Total: 12
+18-->9-->8-->7-->5-->3-->2
+ 2   3   2   3   2   3  
+Custo Total: 15
+18-->17-->16-->15-->14-->3-->2
+ 4   9   5   2   1   3  
+Custo Total: 24
+
+
+Teste 309
+Origem: 	[18]
+Destino:	[3]
+18-->13-->14-->3
+ 1   7   1  
+Custo Total: 9
+18-->9-->8-->7-->5-->3
+ 2   3   2   3   2  
+Custo Total: 12
+18-->17-->16-->15-->14-->3
+ 4   9   5   2   1  
+Custo Total: 21
+
+
+Teste 310
+Origem: 	[18]
+Destino:	[4]
+18-->13-->7-->5-->4
+ 1   5   3   5  
+Custo Total: 14
+18-->9-->8-->6-->4
+ 2   3   2   8  
+Custo Total: 15
+18-->17-->16-->15-->14-->3-->2-->4
+ 4   9   5   2   1   3   3  
+Custo Total: 27
+
+
+Teste 311
+Origem: 	[18]
+Destino:	[5]
+18-->13-->7-->5
+ 1   5   3  
+Custo Total: 9
+18-->9-->8-->7-->5
+ 2   3   2   3  
+Custo Total: 10
+18-->17-->16-->15-->14-->3-->2-->4-->5
+ 4   9   5   2   1   3   3   5  
+Custo Total: 32
+
+
+Teste 312
+Origem: 	[18]
+Destino:	[6]
+18-->9-->8-->6
+ 2   3   2  
+Custo Total: 7
+18-->13-->7-->8-->6
+ 1   5   2   2  
+Custo Total: 10
+18-->17-->16-->15-->14-->3-->2-->4-->6
+ 4   9   5   2   1   3   3   8  
+Custo Total: 35
+
+
+Teste 313
+Origem: 	[18]
+Destino:	[7]
+18-->13-->7
+ 1   5  
+Custo Total: 6
+18-->9-->8-->7
+ 2   3   2  
+Custo Total: 7
+18-->17-->16-->15-->14-->13-->7
+ 4   9   5   2   7   5  
+Custo Total: 32
+
+
+Teste 314
+Origem: 	[18]
+Destino:	[8]
+18-->9-->8
+ 2   3  
+Custo Total: 5
+18-->13-->7-->8
+ 1   5   2  
+Custo Total: 8
+18-->17-->16-->15-->14-->13-->7-->8
+ 4   9   5   2   7   5   2  
+Custo Total: 34
+
+
+Teste 315
+Origem: 	[18]
+Destino:	[9]
+18-->9
+ 2  
+Custo Total: 2
+18-->13-->7-->8-->9
+ 1   5   2   3  
+Custo Total: 11
+18-->17-->16-->15-->14-->13-->7-->8-->9
+ 4   9   5   2   7   5   2   3  
+Custo Total: 37
+
+
+Teste 316
+Origem: 	[18]
+Destino:	[10]
+18-->9-->10
+ 2   2  
+Custo Total: 4
+18-->13-->7-->8-->9-->10
+ 1   5   2   3   2  
+Custo Total: 13
+18-->17-->16-->15-->14-->13-->7-->8-->9-->10
+ 4   9   5   2   7   5   2   3   2  
+Custo Total: 39
+
+
+Teste 317
+Origem: 	[18]
+Destino:	[11]
+18-->9-->8-->6-->11
+ 2   3   2   1  
+Custo Total: 8
+18-->9-->10-->12-->11
+ 2   2   7   4  
+Custo Total: 15
+18-->13-->7-->8-->9-->10-->12-->11
+ 1   5   2   3   2   7   4  
+Custo Total: 24
+
+
+Teste 318
+Origem: 	[18]
+Destino:	[12]
+18-->9-->10-->12
+ 2   2   7  
+Custo Total: 11
+18-->13-->7-->8-->6-->11-->12
+ 1   5   2   2   1   4  
+Custo Total: 15
+18-->17-->16-->15-->14-->3-->2-->4-->6-->11-->12
+ 4   9   5   2   1   3   3   8   1   4  
+Custo Total: 40
+
+
+Teste 319
+Origem: 	[18]
+Destino:	[13]
+18-->13
+ 1  
+Custo Total: 1
+18-->9-->8-->7-->13
+ 2   3   2   5  
+Custo Total: 12
+18-->17-->16-->15-->14-->13
+ 4   9   5   2   7  
+Custo Total: 27
+
+
+Teste 320
+Origem: 	[18]
+Destino:	[14]
+18-->13-->14
+ 1   7  
+Custo Total: 8
+18-->9-->8-->7-->5-->3-->14
+ 2   3   2   3   2   1  
+Custo Total: 13
+18-->9-->8-->7-->13-->14
+ 2   3   2   5   7  
+Custo Total: 19
+
+
+Teste 321
+Origem: 	[18]
+Destino:	[15]
+18-->13-->14-->15
+ 1   7   2  
+Custo Total: 10
+18-->9-->8-->7-->5-->3-->14-->15
+ 2   3   2   3   2   1   2  
+Custo Total: 15
+18-->17-->16-->15
+ 4   9   5  
+Custo Total: 18
+
+
+Teste 322
+Origem: 	[18]
+Destino:	[16]
+18-->17-->16
+ 4   9  
+Custo Total: 13
+18-->13-->14-->15-->16
+ 1   7   2   5  
+Custo Total: 15
+18-->9-->8-->7-->5-->3-->14-->15-->16
+ 2   3   2   3   2   1   2   5  
+Custo Total: 20
+
+
+Teste 323
+Origem: 	[18]
+Destino:	[17]
+18-->17
+ 4  
+Custo Total: 4
+18-->13-->14-->15-->16-->17
+ 1   7   2   5   9  
+Custo Total: 24
+18-->9-->8-->7-->5-->3-->14-->15-->16-->17
+ 2   3   2   3   2   1   2   5   9  
+Custo Total: 29
+
+
+Teste 324
+Origem: 	[18]
+Destino:	[18]
+O no de origem deve ser diferente do no de destino
+
+

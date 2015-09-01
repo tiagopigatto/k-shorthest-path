@@ -30,14 +30,17 @@ void atualizaMatriz(int menorCusto, vector<vector<int> >& matriz, vector<int> &c
 int main(int argc, const char *argv[]){
     
     if (argc != 4){
-        cout << "Espera-se 4 argumentos: [no1] [no2] [k]" << endl;
+        cout << "Esperam-se 3 argumentos: [no1] [no2] [k]" << endl;
         exit(1);
     }
-	 if (argv[1] == argv[2]){
+    if (atoi(argv[1]) == atoi(argv[2])){
 		 cout << "O no de origem deve ser diferente do no de destino" << endl;
 		 exit(1);
 	 }
-
+	 if (atoi(argv[1]) <= 0 || atoi(argv[2]) <= 0){
+       cout << "Os nos de origem e destino devem ser numero positivos" << endl;
+       exit(1);
+    }
 
     int numberOfLines, no1, no2, custo = 0, minCusto;
     long no1_l, no2_l, k_l;
@@ -54,6 +57,16 @@ int main(int argc, const char *argv[]){
     
 	 //Le arquivo de topologia e retorna o número de nós no grafo
     numberOfLines = leTopologia(matriz);
+
+    if(atoi(argv[1]) > numberOfLines){
+       cout << "No de origem nao existente na topologia. Consulte os indices do nos no arquivo de entrada" << endl;
+       exit(1);
+    }
+    if(atoi(argv[2]) > numberOfLines){
+       cout << "No de destino nao existente na topologia. Consulte os indices do nos no arquivo de entrada" << endl;
+       exit(1);
+    }
+
     
     for(int i=0; i< k; i++){
         //Encontra o primeiro menor caminho 
@@ -79,7 +92,7 @@ int main(int argc, const char *argv[]){
         //Imprime pesos de cada aresta do caminho encontrado       
         if (custos.size() > 0){
             for(int k = 0; k < custos.size(); k++){
-                printf(" %d", custos[k]);
+                printf(" %d  ", custos[k]);
             }
             printf("\n");
         }
